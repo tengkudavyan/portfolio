@@ -83,9 +83,10 @@ class Details extends Component{
                                 {/* Link Wrapper */}
                                 <LinkWrapper>
                                     {/* Github Source Code Link */}
-                                    <LinkButton href={projectDetails.githubLink} primary={true} target="_blank"><FaGithub />{textData.seeCode}</LinkButton>
+
+                                    <LinkButton href={projectDetails.githubLink} show={projectDetails.showGithub} primary={true} target="_blank"><FaGithub />{textData.seeCode}</LinkButton>
                                     {/* Website Link */}
-                                    <LinkButton href={projectDetails.link} primary={false} target="_blank"><BiWorld />{textData.visitWeb}</LinkButton>
+                                    <LinkButton href={projectDetails.link} show={projectDetails.showLink} primary={false} target="_blank"><BiWorld />{textData.visitWeb}</LinkButton>
                                 </LinkWrapper>
                             </Wrap>
                             </Body>

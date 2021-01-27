@@ -141,6 +141,7 @@ export const LinkWrapper = styled.div`
 export const LinkButton = styled.a`
     background-color:${props => props.primary ? '#3AAFA9' : '#FEFFFF'};
     color:${props => props.primary ? '#FEFFFF' : '#17252A'};
+    display:${props => props.show ? 'block' : 'none'};
     width:60%;
     border-radius:15px;
     font-size:15px;

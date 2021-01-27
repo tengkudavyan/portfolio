@@ -4,7 +4,7 @@ import {
     HeroSectionContainer, HeroSectionWrap, Header, LogoText, Body, HalfWrap,
     SideImage, TextWrap, Introduction, Name, JobIntroduction, Job, LastWord, DownloadCvButton
 } from './elements';
-
+import CV from '../../Files/english-cv.pdf';
 import proud from '../../Images/HeroSection/proud_feeling.svg' 
 // Hero Section Container
 const HeroSection = ({ textData, language }) => {
@@ -29,7 +29,10 @@ const HeroSection = ({ textData, language }) => {
                             <Job>{textData.job1}</Job>
                             <LastWord>{textData.lastWord}</LastWord>
                         </TextWrap>
-                        <DownloadCvButton>{textData.download}</DownloadCvButton>
+                        <DownloadCvButton 
+                            href={CV}
+                            download="Tengku Davyan Portolio"
+                        >{textData.download}</DownloadCvButton>
                     </HalfWrap>
                     {/* Ilustrations Image Wrap */}
                     <HalfWrap>

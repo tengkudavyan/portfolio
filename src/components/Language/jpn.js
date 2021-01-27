@@ -52,21 +52,27 @@ export const jpn = {
             projectName: '私のポルトフォリオ',
             desc: '自己紹介をするそして私のスキルと経験を覧せるためにポルトフォリオウェッブサイトです。このウェッブサイトはReact Jsフレームワークで作りました。',
             link: 'https://tengkudavyan.com',
-            githubLink:'https://github.com/tengkudavyan/portfolio',
+            githubLink: 'https://github.com/tengkudavyan/portfolio',
+            showLink: true,
+            showGithub:true,
             details:jpnDetails.portfolio
         },
         rechatting: {
             projectName: 'ReChatting',
             desc: 'タグに基づいて公共などプライベートのチャットルームを作成事ができるチャットWebサイトアプリケーションです。DjangoフレームワークとMongo DBデータベースで作りました。',
-            link: 'https://rechatting.tengkudavyan.com',
+            link: '#',
             githubLink: 'https://github.com/tengkudavyan/rechatting',
+            showLink: false,
+            showGithub:false,
             details:jpnDetails.rechatting
         },
         dolla: {
             projectName: 'dolla',
             desc: 'React Jsフレームワークで作りましたフロントエンドウェッブサイトです。このサイト作る理由は私のフロントエンドウェッブサイト開発力を見せるために特にReact Jsフレームワークです。',
             link: 'https://dolla.tengkudavyan.com',
-            githubLink: 'https://github.com/tengkudavyan/React-Js-Money-Saver',
+            githubLink: 'https://github.com/tengkudavyan/React-Js-MoneySaver-FrontEnd',
+            showLink: true,
+            showGithub:true,
             details:jpnDetails.dolla
         },
         trvl: {
@@ -74,6 +80,8 @@ export const jpn = {
             desc: 'React Jsフレームワークで作りましたフロントエンドウェッブサイトです。私のフロントエンドウェッブサイト開発力を見せるために旅行テーマのウェッブサイト。',
             link: 'https://trvl.tengkudavyan.com',
             githubLink: 'https://github.com/tengkudavyan/React-Js-Travel-Web',
+            showLink: true,
+            showGithub:true,
             details:jpnDetails.trvl
         },
         visitWeb: "サイトを見る",
@@ -90,9 +98,9 @@ export const jpn = {
                 timePlace:'メダン, インドネシア (2017年 ー 2020年)'
             },
             history2: {
-                headline: 'Panca Budi 大学',
-                subHeadline: '- Computer Science Field',
-                timePlace:'メダン, インドネシア (2020年 ー 今まで)'
+                headline: 'モバイルアプリ開発のフリーランサー仕事',
+                subHeadline: '- React Nativeでモバイルアップリのフロントエンドを開発しました',
+                timePlace:'メダン, インドネシア (2019年)'
             }
         },
         language: {
@@ -108,7 +116,7 @@ export const jpn = {
                 percent:'60%'
             },
             language3: {
-                headline: 'インドネシア',
+                headline: 'インドネシア語',
                 level: '自国語',
                 percent:'100%'
             }

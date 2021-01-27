@@ -52,13 +52,17 @@ export const eng = {
             desc: 'Portfolio Web to introduce myself,give information about my skill and my experience. I made this website with React JS Frameworks and CSS method that I use is “styled-components”.',
             link: 'https://tengkudavyan.com',
             githubLink: 'https://github.com/tengkudavyan/portfolio',
+            showLink: true,
+            showGithub:true,
             details:engDetail.portfolio
         },
         rechatting: {
             projectName: 'ReChatting',
             desc: 'Chat website application that can make a public or private chatting room based by tags. Can be used without login or anonymously. Build by Django framework and Mongo DB database.',
-            link: 'https://rechatting.tengkudavyan.com',
+            link: '#',
             githubLink: 'https://github.com/tengkudavyan/rechatting',
+            showLink:false,
+            showGithub: false,
             details:engDetail.rechatting
         },
         dolla: {
@@ -66,6 +70,8 @@ export const eng = {
             desc: 'Front-End Website that i made with React JS Frameworks. The purpose of this website is to show my ability in Front-End Web Development specially in React Js Frameworks.',
             link: 'https://dolla.tengkudavyan.com',
             githubLink: 'https://github.com/tengkudavyan/React-Js-MoneySaver-FrontEnd',
+            showLink: true,
+            showGithub:true,
             details:engDetail.dolla
         },
         trvl: {
@@ -73,6 +79,8 @@ export const eng = {
             desc: 'Front-End Website that i made with React Js Frameworks. Traveling theme website to show my skill in Front-End Web Development.',
             link: 'https://trvl.tengkudavyan.com',
             githubLink: 'https://github.com/tengkudavyan/React-JS-Travel-Web',
+            showLink: true,
+            showGithub:true,
             details:engDetail.trvl
         },
         visitWeb: "Visit Web",
@@ -89,9 +97,9 @@ export const eng = {
                 timePlace:'Medan, Indonesia (2017 to 2020)'
             },
             history2: {
-                headline: 'Panca Budi Public University',
-                subHeadline: '- Computer Science Field',
-                timePlace:'Medan, Indonesia (2020 to now)'
+                headline: 'Mobile Developer Freelance Work',
+                subHeadline: '- Made a Mobile App Front-End With React Native',
+                timePlace:'Medan, Indonesia (2019)'
             }
         },
         language: {

@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Link } from 'react-scroll';
 import { VscTriangleRight, VscTriangleLeft } from 'react-icons/vsc';
 // Projects Container
 export const ProjectsContainer = styled.div`
@@ -86,6 +85,11 @@ export const ProjectThumbnail = styled.img`
     transform:${({ zoom }) => (zoom ? "scale(1.4)" : "scale(1)")};
     opacity:${({ zoom }) => (zoom ? "100%" : "90%")};
 
+    &:hover{
+        color:#3AAFA9;
+        transform:scale(1.2);
+    }
+
     @media screen and (max-width:600px){
         width:224px;
         height:115px;
@@ -166,7 +170,9 @@ export const ProjectDesc = styled.p`
 // Visit Button
 export const VisitButton = styled.a`
     background-color:#3AAFA9;
+    opacity:${props => props.showLink ? '100%' : '75%'};
     color:#FEFFFF;
+    pointer-events:${props => props.showLink ? 'auto' : 'none'};
     border-radius:10px;
     font-size:13px;
     font-weight:700;
@@ -175,6 +181,7 @@ export const VisitButton = styled.a`
     transition:200ms;
     cursor:pointer;
     text-decoration:none;
+
     &:hover{
         transform:scale(1.2);
     }

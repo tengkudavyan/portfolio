@@ -169,7 +169,7 @@ export const LastWord = styled.h2`
     }
 `;
 
-export const DownloadCvButton = styled.button`
+export const DownloadCvButton = styled.a`
     background-color:#FEFFFF;
     color:#17252A;
     font-size:15px;
@@ -183,6 +183,7 @@ export const DownloadCvButton = styled.button`
     outline:0;
     border:0;
     transition:300ms;
+    text-decoration:none;
     cursor:pointer;
 
     @media screen and (max-width:1100px){
