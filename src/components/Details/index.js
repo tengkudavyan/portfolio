@@ -65,6 +65,7 @@ class Details extends Component{
     render() {
         const { containerDisplay, containerOpacity,images} = this.state;
         const { projectDetails,textData } = this.props;
+        const {projectName,githubLink,link} = projectDetails;
         const detail = projectDetails.details;
         return (
             <DetailsContainer showDetails={containerDisplay} showOpacity={containerOpacity}>
@@ -72,7 +73,7 @@ class Details extends Component{
                 <DetailsWrapper >
                     <ProjectScroll>
                         <CloseButton onClick={this.props.closeDetails}/>
-                        <Headline>{projectDetails.projectName}</Headline>
+                        <Headline>{projectName}</Headline>
                         <Body>
                             <Wrap center={false}>
                                 {/* Call Project Details Component */}
@@ -83,9 +84,9 @@ class Details extends Component{
                                 {/* Link Wrapper */}
                                 <LinkWrapper>
                                     {/* Github Source Code Link */}
-                                    <LinkButton href={projectDetails.githubLink} show={projectDetails.showGithub} primary={true} target="_blank"><FaGithub />{textData.seeCode}</LinkButton>
+                                    <LinkButton href={githubLink ? githubLink : '#'} show={githubLink ? true : false} primary={true} target="_blank"><FaGithub />{textData.seeCode}</LinkButton>
                                     {/* Website Link */}
-                                    <LinkButton href={projectDetails.link} show={projectDetails.showLink} primary={false} target="_blank"><BiWorld />{textData.visitWeb}</LinkButton>
+                                    <LinkButton href={link ? link : '#'} show={link ? true : false} primary={false} target="_blank"><BiWorld />{textData.visitWeb}</LinkButton>
                                 </LinkWrapper>
                             </Wrap>
                             </Body>
