@@ -16,12 +16,12 @@ import trvl from '../../Images/Project/trvl.png';
 function ProjectDetails({detail}){
     return (
         // Mapping Detail Array
-        detail.contents.map((content) =>
+        detail.contents.map(content =>
             <>
                 {/* Get Detail Headline */}
                 <SubHeadline>{content.subHeadline}</SubHeadline>
                 {/* Mapping Detail Description */}
-                {content.desc.map((description) =>
+                {content.desc.map(description =>
                     <Desc>{description}</Desc>
                 )}
             </>
@@ -83,7 +83,6 @@ class Details extends Component{
                                 {/* Link Wrapper */}
                                 <LinkWrapper>
                                     {/* Github Source Code Link */}
-
                                     <LinkButton href={projectDetails.githubLink} show={projectDetails.showGithub} primary={true} target="_blank"><FaGithub />{textData.seeCode}</LinkButton>
                                     {/* Website Link */}
                                     <LinkButton href={projectDetails.link} show={projectDetails.showLink} primary={false} target="_blank"><BiWorld />{textData.visitWeb}</LinkButton>
