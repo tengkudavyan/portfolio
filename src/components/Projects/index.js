@@ -133,6 +133,8 @@ class Projects extends Component{
             projectHighlight,showDetails
         } = this.state;
 
+        const {projectName, desc,link,githubLink} = projectInfo;
+
         // Projects Wrapper Slide to know how much px needed to slide to next project
         const ProjectsWrapperSlide = (projectImageWidth + projectMargin * 2) * (projectHighlight - 1);
         // Projects Wrapper Margin to know how muc px needed to show highlight project
@@ -171,7 +173,7 @@ class Projects extends Component{
 
                     {/* Wrapper For Button */}
                     <ProjectsWrapper>
-                        <VisitButton href={projectInfo.link} target="_blank" showLink={projectInfo.showLink}>{textData.visitWeb}</VisitButton>
+                        <VisitButton href={link || "#"} target="_blank" showLink={link ? true : false}>{textData.visitWeb}</VisitButton>
                         <DetailButton onClick={() => this.setState({showDetails:true})}>{textData.seeDetails}</DetailButton>
                     </ProjectsWrapper>
                     {/* End Of Wrapper  */}

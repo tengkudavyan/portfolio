@@ -23,7 +23,7 @@ const CodingSkill = ({ textData }) => {
                 </CodingCategoryWrapper>
             </CodingSkillWrap>
         </CodingSkillContainer>
-    )
+    );
 }
 
 export default CodingSkill;

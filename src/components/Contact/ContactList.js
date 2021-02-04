@@ -1,5 +1,5 @@
 import React from 'react';
-import { Wrap, ContactInfoContainer, AppLogo, ContactInfo, Info } from './elements';
+import { Wrap, ContactInfoContainer, AppLogo, ContactInfo, Info,Hint } from './elements';
 
 // Importing Image
 import Email from '../../Images/ContactMe/email.png';
@@ -13,6 +13,7 @@ import Line from '../../Images/ContactMe/line.png';
 const ContactList = ({ textData }) => {
     return (
         <Wrap>
+            <Hint>{textData.addHint}</Hint>
             {/* Email Contact Info */}
             <ContactInfoContainer alt="Click to Add My Contact" onClick={() => { document.execCommand('Copied') }}>
                 <AppLogo src={Email} />

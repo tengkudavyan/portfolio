@@ -6,7 +6,7 @@ export const HeroSectionContainer = styled.div`
     width:100%;
     display:flex;
     justify-content:center;
-    height:800px;
+    min-height:800px;
     background-color:#3AAFA9;
 `;
 
@@ -18,6 +18,7 @@ export const HeroSectionWrap = styled.div`
     flex-direction:column;
     margin-left:75px;
     margin-right:25px;
+    margin-bottom:20px;
 
     /* @media screen and (max-width:1100px){
         margin:0 1px;

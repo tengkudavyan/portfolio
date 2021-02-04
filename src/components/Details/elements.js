@@ -96,7 +96,7 @@ export const Wrap = styled.div`
     flex-direction:column;
     flex:1;
     padding:10px 0;
-    align-items:${props => (props.center ? 'center' : 'flex-start')};
+    align-items:${({center}) => center ? 'center' : 'flex-start'};
     overflow:auto;
 `;
 
@@ -139,9 +139,9 @@ export const LinkWrapper = styled.div`
 `;
 // Link Button
 export const LinkButton = styled.a`
-    background-color:${props => props.primary ? '#3AAFA9' : '#FEFFFF'};
-    color:${props => props.primary ? '#FEFFFF' : '#17252A'};
-    display:${props => props.show ? 'block' : 'none'};
+    background-color:${({primary}) => primary ? '#3AAFA9' : '#FEFFFF'};
+    color:${({primary}) => primary ? '#FEFFFF' : '#17252A'};
+    display:${({show}) => show ? 'block' : 'none'};
     width:60%;
     border-radius:15px;
     font-size:15px;
@@ -154,6 +154,6 @@ export const LinkButton = styled.a`
     transition:200ms;
 
     &:hover{
-        transform:scale(1.5);
+        transform:scale(1.1);
     }
 `;

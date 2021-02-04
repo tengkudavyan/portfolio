@@ -22,7 +22,7 @@ export const eng = {
     },
     aboutMe: {
         headline:"WHO AM I ?",
-        description:"I am a passionate, ambitious and hardworking, with skills and experience in website development, mobile application development and design. I always passionate to make an application that help many people. Everyday i always motivated learn something new everyday to develop myself. I have experience in web development, mobile application development and desktop development either in front-end or back-end. 2 years ago, i have made mobile application front-end with React Native as a freelancer. I don't really have professional experience, and i like to take my programming skill to professional work. I am 18 years old and live in Indonesia."
+        description:"I am a passionate, ambitious and hardworking, with skills and experience in website development, mobile application development and design. I have been programming for 4 years. I always passionate to make an application that help many people. Everyday i always motivated learn something new to develop myself. I have experience in web development, mobile application development and desktop development either in front-end or back-end. 2 years ago, i have made mobile application front-end with React Native as a freelancer. I don't really have professional experience, and i like to take my programming skill to professional work. I am 18 years old and live in Indonesia."
     },
     coding: {
         headline: "CODING SKILLS",
@@ -52,26 +52,18 @@ export const eng = {
             desc: 'Portfolio Web to introduce myself,give information about my skill and my experience. I made this website with React JS Frameworks and CSS method that I use is “styled-components”.',
             link: 'https://tengkudavyan.com',
             githubLink: 'https://github.com/tengkudavyan/portfolio',
-            showLink: true,
-            showGithub:true,
             details:engDetail.portfolio
         },
         rechatting: {
             projectName: 'ReChatting',
             desc: 'Chat website application that can make a public or private chatting room based by tags. Can be used without login or anonymously. Build by Django framework and Mongo DB database.',
-            link: '#',
-            githubLink: 'https://github.com/tengkudavyan/rechatting',
-            showLink:false,
-            showGithub: false,
             details:engDetail.rechatting
         },
         dolla: {
             projectName: 'dolla',
             desc: 'Front-End Website that i made with React JS Frameworks. The purpose of this website is to show my ability in Front-End Web Development specially in React Js Frameworks.',
             link: 'https://dolla.tengkudavyan.com',
-            githubLink: 'https://github.com/tengkudavyan/React-Js-MoneySaver-FrontEnd',
-            showLink: true,
-            showGithub:true,
+            githubLink: 'https://github.com/tengkudavyan/dolla',
             details:engDetail.dolla
         },
         trvl: {
@@ -79,8 +71,6 @@ export const eng = {
             desc: 'Front-End Website that i made with React Js Frameworks. Traveling theme website to show my skill in Front-End Web Development.',
             link: 'https://trvl.tengkudavyan.com',
             githubLink: 'https://github.com/tengkudavyan/React-JS-Travel-Web',
-            showLink: true,
-            showGithub:true,
             details:engDetail.trvl
         },
         visitWeb: "Visit Web",
@@ -137,6 +127,8 @@ export const eng = {
         linkedin: 'Tengku Davyan',
         github:'github.com/tengkudavyan',
         telegramId: '@tengkudavyan',
+        addHint: '* Click to Add My Contact',
+        sendSuccess:'Message has been sended'
     }
     
 }

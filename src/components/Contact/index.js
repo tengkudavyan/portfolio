@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import ContactList from './ContactList';
 import {
     ContactContainer, ContactWrapper, Headline, ContentsWrap, Wrap,
-    InputLabel, InputData, InputMessage, SendButton,
+    InputLabel, InputData, InputMessage, SendButton,SendSuccess,Copyright
 } from './elements';
 import emailjs from 'emailjs-com';
     
@@ -13,7 +13,8 @@ class Contact extends Component{
         this.state = {
             name: '',
             email: '',
-            message:''
+            message: '',
+            alertShow:false
         }
     }
 
@@ -27,7 +28,7 @@ class Contact extends Component{
             message: message,
         }, 'user_2wDiNbod5Sdpvv2OmttvZ').then((result) => {
             // If Succesful
-            this.setState({ name: "", email: "", message: "" });
+            this.setState({ name: "", email: "", message: "",alertShow:true });
         }, (error) => {
                 console.log(error.text);
                 console.log("error");
@@ -36,7 +37,7 @@ class Contact extends Component{
     
     render() {
         const { textData } = this.props;
-        const { name, email, message } = this.state;
+        const { name, email, message,alertShow} = this.state;
         return (
             <ContactContainer id="contact">
                 <ContactWrapper>
@@ -52,14 +53,16 @@ class Contact extends Component{
                             <InputData type="email" placeholder={textData.emailPlaceholder} value={email} onChange={(e) => { this.setState({ email: e.target.value })}}/>
                             {/* Messages Input */}
                             <InputLabel>{textData.messageInput}</InputLabel>
-                            <InputMessage value={message}  onChange={(e) => {this.setState({ message: e.target.value })}}/>
+                            <InputMessage value={message} onChange={(e) => { this.setState({ message: e.target.value }) }} />
+                            {/* Success Alert */}
+                            <SendSuccess show={alertShow}>{textData.sendSuccess}</SendSuccess>
                             {/* Send Button */}
-                            <SendButton onClick={this.sendEmail}>{textData.sendButton}</SendButton>
-                            
+                            <SendButton onClick={(this.sendEmail)}>{textData.sendButton}</SendButton>     
                         </Wrap>
                         {/* Contact List Section */}
                         <ContactList textData={textData} />
                     </ContentsWrap>
+                    <Copyright>tengkudavyan © 2021 All Rights Reserved</Copyright>
                 </ContactWrapper>
             </ContactContainer>
         )

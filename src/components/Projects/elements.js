@@ -49,14 +49,12 @@ export const ProjectsWrapperInfo = styled.div`
 
 // Projects Thumbnail Wrapper
 export const ProjectsThumbnailWrapper = styled.div`
-    /* background-color:red; */
     display:flex;
     flex-direction:row;
     align-items:center;
     margin-bottom:20px;
-    /* margin-left:744px; */
     padding:40px 0;
-    transform:translateX(${({ marginWidth }) => (marginWidth)}px);
+    transform:translateX(${({ marginWidth }) => marginWidth}px);
     transition:500ms;
     
 `;
@@ -82,8 +80,8 @@ export const ProjectThumbnail = styled.img`
     margin-left:50px;
     margin-right:50px;
     transition:500ms;
-    transform:${({ zoom }) => (zoom ? "scale(1.4)" : "scale(1)")};
-    opacity:${({ zoom }) => (zoom ? "100%" : "90%")};
+    transform:${({ zoom }) => zoom ? "scale(1.4)" : "scale(1)"};
+    opacity:${({ zoom }) => zoom ? "100%" : "90%"};
 
     &:hover{
         color:#3AAFA9;
@@ -122,6 +120,7 @@ export const PrevButton = styled(VscTriangleLeft)`
     width:80px;
     height:80px;
     color:#3B484D;
+    transition:500ms;
     cursor:pointer;
 
     &:hover{
@@ -170,9 +169,9 @@ export const ProjectDesc = styled.p`
 // Visit Button
 export const VisitButton = styled.a`
     background-color:#3AAFA9;
-    opacity:${props => props.showLink ? '100%' : '75%'};
+    opacity:${({showLink}) => showLink ? '100%' : '75%'};
     color:#FEFFFF;
-    pointer-events:${props => props.showLink ? 'auto' : 'none'};
+    pointer-events:${({showLink}) => showLink ? 'auto' : 'none'};
     border-radius:10px;
     font-size:13px;
     font-weight:700;

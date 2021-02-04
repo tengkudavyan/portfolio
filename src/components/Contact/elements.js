@@ -114,10 +114,34 @@ export const SendButton = styled.button`
     background-color:#3AAFA9;
     cursor: pointer;
     transition:200ms;
+    outline:none;
 
     &:hover{
         transform:scale(1.1);
     }
+`;
+
+// Send Message Success
+export const SendSuccess = styled.h2`
+    color:#FEFFFF;
+    padding:${props => props.show ? '15px 15px' : '0px 15px'};
+    width:90%;
+    background-color:#4BB543;
+    border-radius:10px;
+    transition:500ms;
+    margin-top:${props => props.show ? '15px' : '0px'};
+    font-size:13px;
+    overflow:hidden;
+    height:${props => props.show ? 'auto' : '0'};
+`;
+
+// Hint 
+export const Hint = styled.p`
+    color:#FEFFFF;
+    font-size:15px;
+    margin:10px 0;
+    font-weight:bold;
+    padding: 0 10px;
 `;
 
 // Contact Info Container
@@ -165,4 +189,13 @@ export const Info = styled.div`
     align-items:center;
     font-size:15px;
     flex:1;
+`;
+
+// Copyright
+export const Copyright = styled.small`
+    font-size:15px;
+    margin:10px 0 30px 0 ;
+    color:#FEFFFF;
+    
+
 `;

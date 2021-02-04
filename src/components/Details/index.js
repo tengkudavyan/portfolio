@@ -13,7 +13,7 @@ import dolla from '../../Images/Project/dolla.png';
 import trvl from '../../Images/Project/trvl.png';
 
 // Project Details Component
-function ProjectDetails({detail}){
+const ProjectDetails = ({detail}) => {
     return (
         // Mapping Detail Array
         detail.contents.map((content) =>
@@ -44,19 +44,20 @@ class Details extends Component{
         }
     }
 
-    componentDidUpdate(prevProps) {
-        if (prevProps.show != this.props.show) {
+    componentDidUpdate = prevProps => {
+        if (prevProps.show !== this.props.show) {
             this.props.show ? this.showContainer() : this.closeContainer();
         }
     }
 
 
-
+    // Function For Show / Popping The Details
     showContainer = () => {
         this.setState({ containerDisplay: 'flex' });
         setTimeout(() => { this.setState({ containerOpacity: '100%' }) }, 10);
     }
-
+    
+    // Function to Close Details Container
     closeContainer = () => {
         this.setState({ containerOpacity: '0%' });
         setTimeout(() => { this.setState({ containerDisplay: 'none' }) }, 200);
@@ -65,28 +66,29 @@ class Details extends Component{
     render() {
         const { containerDisplay, containerOpacity,images} = this.state;
         const { projectDetails,textData } = this.props;
-        const detail = projectDetails.details;
+        const {projectName,link,githubLink,details} = projectDetails;
+        
         return (
             <DetailsContainer showDetails={containerDisplay} showOpacity={containerOpacity}>
                 <DarkBackground/>
                 <DetailsWrapper >
                     <ProjectScroll>
                         <CloseButton onClick={this.props.closeDetails}/>
-                        <Headline>{projectDetails.projectName}</Headline>
+                        <Headline>{projectName}</Headline>
                         <Body>
                             <Wrap center={false}>
                                 {/* Call Project Details Component */}
-                                <ProjectDetails detail={detail}/>
+                                <ProjectDetails detail={details}/>
                             </Wrap>
                             <Wrap center={true}>
-                                <ProjectImage src={images[detail.imageSrc]} />
+                                <ProjectImage src={images[details.imageSrc]} />
                                 {/* Link Wrapper */}
                                 <LinkWrapper>
                                     {/* Github Source Code Link */}
 
-                                    <LinkButton href={projectDetails.githubLink} show={projectDetails.showGithub} primary={true} target="_blank"><FaGithub />{textData.seeCode}</LinkButton>
+                                    <LinkButton href={githubLink || ''} show={githubLink ? true : false} primary={true} target="_blank"><FaGithub />{textData.seeCode}</LinkButton>
                                     {/* Website Link */}
-                                    <LinkButton href={projectDetails.link} show={projectDetails.showLink} primary={false} target="_blank"><BiWorld />{textData.visitWeb}</LinkButton>
+                                    <LinkButton href={link || ''} show={link ? true : false} primary={false} target="_blank"><BiWorld />{textData.visitWeb}</LinkButton>
                                 </LinkWrapper>
                             </Wrap>
                             </Body>

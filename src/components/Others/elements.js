@@ -211,7 +211,7 @@ export const LanguagePercent = styled.div`
 
 // Percent Level
 export const Percent =  styled.div`
-    width:${({percentLevel}) => (percentLevel)};
+    width:${({percentLevel}) => percentLevel};
     height:10px;
     
     border-radius:50px;

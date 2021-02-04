@@ -23,7 +23,7 @@ export const jpn = {
     },
     aboutMe: {
         headline: "私の事",
-        description:'私は情熱的で野心的で勤勉な人です, Web開発とモバイルアップリ開発とデザインにスキルと経験があります。私はいつも大勢の人を助けられるアプリを作りたいです。毎日私はいつも自分を成長させるために毎日新しいことを学ぶようにします。私はWeb開発、モバイルアプリケーション開発、デスクトップアプリケーション開発にフロントエンドもバックエンドの経験があります。 ２年前, フリーランサーとしてReact Nativeでモバイルアプリケーションのフロントエンドを作ったことがあります。 専門的な経験があんまりありませんけど私のプログラミングスキルを専門的な仕事にするつもりです。私は１８歳インドネシアに住んでいます。'
+        description:'私は情熱的で野心的で勤勉な人です, Web開発とモバイルアプリ開発とデザインにスキルと経験があります。私はプログラミングを始めたからもう4年間です。私はいつもたくさんの人を助けられるアプリを作りたいです。毎日私はいつも自分を成長させるために新しいことを学ぶようにしています。私はWeb開発、モバイルアプリケーション開発、デスクトップアプリケーション開発にフロントエンドもバックエンドの経験があります。 ２年前, フリーランサーとしてReact Nativeでモバイルアプリケーションのフロントエンドを作ったことがあります。 専門的な経験があまりありませんが私はプログラミングスキルを専門的な仕事にするつもりです。私は１８歳でインドネシアに住んでいます。'
     },
     coding: {
         headline: "コーディング力",
@@ -53,26 +53,18 @@ export const jpn = {
             desc: '自己紹介をするそして私のスキルと経験を覧せるためにポルトフォリオウェッブサイトです。このウェッブサイトはReact Jsフレームワークで作りました。',
             link: 'https://tengkudavyan.com',
             githubLink: 'https://github.com/tengkudavyan/portfolio',
-            showLink: true,
-            showGithub:true,
             details:jpnDetails.portfolio
         },
         rechatting: {
             projectName: 'ReChatting',
             desc: 'タグに基づいて公共などプライベートのチャットルームを作成事ができるチャットWebサイトアプリケーションです。DjangoフレームワークとMongo DBデータベースで作りました。',
-            link: '#',
-            githubLink: 'https://github.com/tengkudavyan/rechatting',
-            showLink: false,
-            showGithub:false,
             details:jpnDetails.rechatting
         },
         dolla: {
             projectName: 'dolla',
             desc: 'React Jsフレームワークで作りましたフロントエンドウェッブサイトです。このサイト作る理由は私のフロントエンドウェッブサイト開発力を見せるために特にReact Jsフレームワークです。',
             link: 'https://dolla.tengkudavyan.com',
-            githubLink: 'https://github.com/tengkudavyan/React-Js-MoneySaver-FrontEnd',
-            showLink: true,
-            showGithub:true,
+            githubLink: 'https://github.com/tengkudavyan/dolla',
             details:jpnDetails.dolla
         },
         trvl: {
@@ -80,8 +72,6 @@ export const jpn = {
             desc: 'React Jsフレームワークで作りましたフロントエンドウェッブサイトです。私のフロントエンドウェッブサイト開発力を見せるために旅行テーマのウェッブサイト。',
             link: 'https://trvl.tengkudavyan.com',
             githubLink: 'https://github.com/tengkudavyan/React-Js-Travel-Web',
-            showLink: true,
-            showGithub:true,
             details:jpnDetails.trvl
         },
         visitWeb: "サイトを見る",
@@ -137,7 +127,9 @@ export const jpn = {
         lineId: 'tengku.davyan17',
         linkedin: 'Tengku Davyan',
         github:'github.com/tengkudavyan',
-        telegramId:'@tengkudavyan'
+        telegramId: '@tengkudavyan',
+        addHint:'* 連絡先を追加するためにクリックしてください',
+        sendSuccess:'メッセージが送られました'
     }
     
 }

@@ -5,9 +5,10 @@ import {
     SideImage, TextWrap, Introduction, Name, JobIntroduction, Job, LastWord, DownloadCvButton
 } from './elements';
 import CV from '../../Files/english-cv.pdf';
-import proud from '../../Images/HeroSection/proud_feeling.svg' 
+import Proud from '../../Images/HeroSection/proud_feeling.svg' 
 // Hero Section Container
 const HeroSection = ({ textData, language }) => {
+    const {introduction,name,jobIntroduction,job1,lastWord,download} = textData;
     return (
         <HeroSectionContainer id='home'>
             <HeroSectionWrap>
@@ -15,28 +16,28 @@ const HeroSection = ({ textData, language }) => {
                     <LogoText>tengkudavyan</LogoText>
                     {/* Give different input and link to Toggle based of language */}
                     <Toggle
-                        choice={language == 'eng' ? true : false}
-                        linkTo={language == 'eng' ? '/jpn' : '/eng'}
+                        choice={language === 'eng' ? true : false}
+                        linkTo={language === 'eng' ? '/jpn' : '/eng'}
                     />
                 </Header>
                 <Body> {/* HalfWrap is used to divide the body into 2 part in horizontal */}
                     {/* Text Introductio Wrap */}
                     <HalfWrap> 
                         <TextWrap>
-                            <Introduction>{textData.introduction}</Introduction>
-                            <Name>{textData.name}</Name>
-                            <JobIntroduction>{textData.jobIntroduction}</JobIntroduction>
-                            <Job>{textData.job1}</Job>
-                            <LastWord>{textData.lastWord}</LastWord>
+                            <Introduction>{introduction}</Introduction>
+                            <Name>{name}</Name>
+                            <JobIntroduction>{jobIntroduction}</JobIntroduction>
+                            <Job>{job1}</Job>
+                            <LastWord>{lastWord}</LastWord>
                         </TextWrap>
                         <DownloadCvButton 
                             href={CV}
                             download="Tengku Davyan Portolio"
-                        >{textData.download}</DownloadCvButton>
+                        >{download}</DownloadCvButton>
                     </HalfWrap>
                     {/* Ilustrations Image Wrap */}
                     <HalfWrap>
-                        <SideImage src={proud}/>
+                        <SideImage src={Proud}/>
                     </HalfWrap>
                 </Body>
             </HeroSectionWrap>
