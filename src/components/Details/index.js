@@ -16,12 +16,12 @@ import trvl from '../../Images/Project/trvl.png';
 const ProjectDetails = ({detail}) => {
     return (
         // Mapping Detail Array
-        detail.contents.map((content) =>
+        detail.contents.map(content =>
             <>
                 {/* Get Detail Headline */}
                 <SubHeadline>{content.subHeadline}</SubHeadline>
                 {/* Mapping Detail Description */}
-                {content.desc.map((description) =>
+                {content.desc.map(description =>
                     <Desc>{description}</Desc>
                 )}
             </>
@@ -67,7 +67,7 @@ class Details extends Component{
         const { containerDisplay, containerOpacity,images} = this.state;
         const { projectDetails,textData } = this.props;
         const {projectName,link,githubLink,details} = projectDetails;
-        
+
         return (
             <DetailsContainer showDetails={containerDisplay} showOpacity={containerOpacity}>
                 <DarkBackground/>
@@ -85,7 +85,6 @@ class Details extends Component{
                                 {/* Link Wrapper */}
                                 <LinkWrapper>
                                     {/* Github Source Code Link */}
-
                                     <LinkButton href={githubLink || ''} show={githubLink ? true : false} primary={true} target="_blank"><FaGithub />{textData.seeCode}</LinkButton>
                                     {/* Website Link */}
                                     <LinkButton href={link || ''} show={link ? true : false} primary={false} target="_blank"><BiWorld />{textData.visitWeb}</LinkButton>

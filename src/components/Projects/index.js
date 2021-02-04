@@ -173,6 +173,7 @@ class Projects extends Component{
 
                     {/* Wrapper For Button */}
                     <ProjectsWrapper>
+
                         <VisitButton href={link || "#"} target="_blank" showLink={link ? true : false}>{textData.visitWeb}</VisitButton>
                         <DetailButton onClick={() => this.setState({showDetails:true})}>{textData.seeDetails}</DetailButton>
                     </ProjectsWrapper>

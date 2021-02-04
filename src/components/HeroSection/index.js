@@ -32,8 +32,13 @@ const HeroSection = ({ textData, language }) => {
                         </TextWrap>
                         <DownloadCvButton 
                             href={CV}
+<<<<<<< HEAD
                             download="Tengku Davyan Portolio"
                         >{download}</DownloadCvButton>
+=======
+                            download="Tengku Davyan Portfolio"
+                        >{textData.download}</DownloadCvButton>
+>>>>>>> 98350177ad822d949c611b81e9b09f7c2bd4e5e9
                     </HalfWrap>
                     {/* Ilustrations Image Wrap */}
                     <HalfWrap>
