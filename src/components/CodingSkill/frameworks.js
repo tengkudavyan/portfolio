@@ -2,6 +2,8 @@ import React from 'react';
 import { CodingCategory, SubHeadline, CodingLanguageContainer, CodingLanguage, LanguageImage, LanguageName,Experience } from './elements';
 import ReactImage from '../../Images/CodingSkills/react.png';
 import Django from '../../Images/CodingSkills/django.png';
+import Vue from '../../Images/CodingSkills/vue.png';
+import Dotnet from '../../Images/CodingSkills/dotnet.png';
 // Coding Category Framework
 const Frameworks = ({ textData }) => {
     return (
@@ -25,6 +27,18 @@ const Frameworks = ({ textData }) => {
                     <Experience>{textData.experience.reactNative}</Experience>
                     <LanguageImage src={ReactImage} />
                     <LanguageName>React<br />Native</LanguageName>
+                </CodingLanguage>
+                {/* Frameworks Vue JS */}
+                <CodingLanguage>
+                    <Experience>{textData.experience.vueJs}</Experience>
+                    <LanguageImage src={Vue} />
+                    <LanguageName> Vue JS</LanguageName>
+                </CodingLanguage>
+                {/* Frameworks .Net Core */}
+                <CodingLanguage>
+                    <Experience>{textData.experience.dotnet}</Experience>
+                    <LanguageImage src={Dotnet} />
+                    <LanguageName>.NET Core</LanguageName>
                 </CodingLanguage>
             </CodingLanguageContainer>
         </CodingCategory>

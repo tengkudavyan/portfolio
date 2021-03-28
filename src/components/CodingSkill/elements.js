@@ -75,6 +75,7 @@ export const Experience = styled.p`
 export const LanguageImage = styled.img`
     width:85px;
     background-color:${softWhite};
+    height:85px;
     padding:5px;
     border-radius:10px;
 `;

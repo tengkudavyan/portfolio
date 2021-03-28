@@ -22,7 +22,7 @@ export const eng = {
     },
     aboutMe: {
         headline:"WHO AM I ?",
-        description:"I am a passionate, ambitious and hardworking, with skills and experience in website development, mobile application development and design. I have been programming for 4 years. I always passionate to make an application that help many people. Everyday i always motivated learn something new to develop myself. I have experience in web development, mobile application development and desktop development either in front-end or back-end. 2 years ago, i have made mobile application front-end with React Native as a freelancer. I don't really have professional experience, and i like to take my programming skill to professional work. I am 18 years old and live in Indonesia."
+        description:"I am a passionate, ambitious and hardworking, with skills and experience in website development, mobile application development and design. I have been programming for 4 years. I always passionate to make an application that help many people. Everyday i always motivated learn something new to develop myself. I have experience in web development, mobile application development and desktop development either in front-end or back-end. 2 years ago, i have made mobile application front-end with React Native as a freelancer. I don't really have professional experience, and i like to take my programming skill to professional work."
     },
     coding: {
         headline: "CODING SKILLS",
@@ -36,12 +36,16 @@ export const eng = {
             python: '1 Years',
             javaScript: '3 Years',
             java: '3 Years',
+            cSharp:'<6 Months',
             php: '3 Years',
             reactJs: '3 Years',
+            vueJs:'<6 Months',
             django: '1 Years',
+            dotnet:'<6 Months',
             reactNative:'3 Years',
             mysql: '2 Years',
-            mongoDB:'6 Months'
+            mongoDB:'6 Months',
+            sqlServer:'<6 Months'
             
         }
     },
