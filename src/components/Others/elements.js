@@ -1,45 +1,23 @@
 import styled from 'styled-components';
+import { primaryGreen,primaryBlack,softWhite,softGray } from '../GlobalComponent/Color';
+import { FlexBox} from '../GlobalComponent/StylePackage';
 
-// Others Container
-export const OthersContainer = styled.div`
-    width:100%;
-    display:flex;
-    justify-content:center;
-    min-height:800px;
-    background-color:#3AAFA9;
-`;
 
 // Other Wrapper
 export const OthersWrap = styled.div`
+    ${FlexBox('column','','center')}
     width:100%;
     max-width:1100px;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    margin-left:75px;
-    margin-right:25px;
+    margin: 0 25px 0 75px;
 `;
 
-// Others Section Headline
-export const Headline = styled.h1`
-    color:#17252A;
-    font-size:45px;
-    font-weight:900;
-    margin-top:30px;
-    text-align:center;
 
-    @media screen and (max-width:600px){
-        font-size:40px;
-    }
-`;
 
 // Contents Wrapper
 export const ContentsWrap = styled.div`
+    ${FlexBox('row')}
     width:100%;
-    display:flex;
-    flex-direction:row;
-    margin-top:30px;
-    margin-bottom:30px;
+    margin:30px 0;
     
     @media screen and (max-width:860px){
         flex-direction:column;
@@ -48,12 +26,10 @@ export const ContentsWrap = styled.div`
 
 // Others Contains
 export const SectionContainer = styled.div`
-    display:flex;
+    ${FlexBox('column','','center')}
     flex:1;
     box-sizing:border-box;
-    flex-direction:column;
-    align-items:center;
-    background-color:#17252A;
+    background-color:${primaryBlack};
     border-radius:30px;
     padding:20px;
     margin:20px 40px;
@@ -70,18 +46,16 @@ export const SectionContainer = styled.div`
 
 // Others Sub Headline
 export const SubHeadline = styled.h2`
-    color:#FEFFFF;
+    color:${softWhite};
     font-weight:600;
     font-size:28px;
 `;
 
 // Others Sub Container
-export const OthersContent= styled.div`
-    display:flex;
+export const OthersContent = styled.div`
+    ${FlexBox('column','center')}
     flex:1;
-    flex-direction:column;
     width:100%;
-    justify-content:center;
     position:relative;
 `;
 
@@ -92,17 +66,15 @@ export const ScrollLine = styled.div`
     bottom:20px;
     left:5px;
     z-index:0;
-    background:#3B484D;
+    background:${softGray};
     width:7px;
     border-radius:50px;
 `;
 
 // History Container
 export const HistoryContainer = styled.div`
-    display:flex;
+    ${FlexBox('row','','center')}
     margin:30px 0;
-    flex-direction:row;
-    align-items:center;
     z-index:1;
 `;
 
@@ -117,14 +89,13 @@ export const GreenDot = styled.div`
     border-radius:50px;
     box-sizing:border-box;
     margin-right:20px;
-    background-color:#3AAFA9;
+    background-color:${primaryGreen};
 `;
 
 // History Text Container
 export const HistoryText = styled.div`
-    display:flex;
-    flex-direction:column;
-    color:#FEFFFF;
+    ${FlexBox('column')}
+    color:${softWhite};
     flex:10;
     margin-left:10px;
 `;  
@@ -175,10 +146,9 @@ export const HistoryPlaceTime = styled.h2`
 
 // Language Container
 export const LanguageContainer = styled.div`
-    display:flex;
-    flex-direction:column;
+    ${FlexBox('column')}
     width:80%;
-    color:#FEFFFF;
+    color:${softWhite};
     margin:20px 30px;
 
     @media screen and (max-width:500px){
@@ -206,7 +176,7 @@ export const LanguagePercent = styled.div`
     height:10px;
     margin-top:15px;
     border-radius:50px;
-    background-color:#3B484D;
+    background-color:${softGray};
 `;
 
 // Percent Level
@@ -215,5 +185,5 @@ export const Percent =  styled.div`
     height:10px;
     
     border-radius:50px;
-    background-color:#3AAFA9;
+    background-color:${primaryGreen};
 `;

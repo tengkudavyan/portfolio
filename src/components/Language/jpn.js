@@ -65,7 +65,6 @@ export const jpn = {
             desc: 'React Jsフレームワークで作りましたフロントエンドウェッブサイトです。このサイト作る理由は私のフロントエンドウェッブサイト開発力を見せるために特にReact Jsフレームワークです。',
             link: 'https://dolla.tengkudavyan.com',
             githubLink: 'https://github.com/tengkudavyan/dolla',
-            githubLink: 'https://github.com/tengkudavyan/React-Js-MoneySaver-FrontEnd',
             details:jpnDetails.dolla
         },
         trvl: {

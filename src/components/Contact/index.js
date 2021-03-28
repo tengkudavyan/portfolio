@@ -1,9 +1,11 @@
 import React,{Component} from 'react';
 import ContactList from './ContactList';
 import {
-    ContactContainer, ContactWrapper, Headline, ContentsWrap, Wrap,
+    ContactWrapper, ContentsWrap, Wrap,
     InputLabel, InputData, InputMessage, SendButton,SendSuccess,Copyright
 } from './elements';
+import Headline from '../GlobalComponent/Headline';
+import MainContainer from '../GlobalComponent/MainContainer';
 import emailjs from 'emailjs-com';
     
 // Contact Section
@@ -39,9 +41,9 @@ class Contact extends Component{
         const { textData } = this.props;
         const { name, email, message,alertShow} = this.state;
         return (
-            <ContactContainer id="contact">
+            <MainContainer primary={false} minHeight={true} id="contact">
                 <ContactWrapper>
-                    <Headline>{textData.headline}</Headline>
+                    <Headline primary={true}>{textData.headline}</Headline>
                     <ContentsWrap>
                         {/* Email Send Section */}
                         <Wrap>
@@ -64,7 +66,7 @@ class Contact extends Component{
                     </ContentsWrap>
                     <Copyright>tengkudavyan © 2021 All Rights Reserved</Copyright>
                 </ContactWrapper>
-            </ContactContainer>
+            </MainContainer>
         )
     }
 }

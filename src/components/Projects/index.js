@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import Details from '../Details';
 import {
-    ProjectsContainer, ProjectsWrapper, Headline, ProjectsThumbnailWrapper, ProjectThumbnail,
+    ProjectsContainer, ProjectsWrapper, ProjectsThumbnailWrapper, ProjectThumbnail,
     NextButton, PrevButton, ProjectInfo, ProjectName, ProjectDesc, ProjectsWrapperInfo, ProjectsMain,
     VisitButton, DetailButton
 } from './elements';
-
+import Headline from '../GlobalComponent/Headline';
 // Importing Images
 import Portfolio from '../../Images/Project/portfolio.png';
 import ReChatting from '../../Images/Project/rechatting.png';
@@ -59,7 +59,7 @@ class Projects extends Component{
     // When Something Update
     componentDidUpdate(prevProps, prevState) {
         // If Language Change
-        if (prevState.textData != this.props.textData) {
+        if (prevState.textData !== this.props.textData) {
             // Changing Language State
             this.setState({ textData: this.props.textData });
             this.changeProjectInfo(this.state.projectHighlight);
@@ -133,7 +133,7 @@ class Projects extends Component{
             projectHighlight,showDetails
         } = this.state;
 
-        const {projectName, desc,link,githubLink} = projectInfo;
+        const {projectName, desc,link} = projectInfo;
 
         // Projects Wrapper Slide to know how much px needed to slide to next project
         const ProjectsWrapperSlide = (projectImageWidth + projectMargin * 2) * (projectHighlight - 1);
@@ -145,7 +145,7 @@ class Projects extends Component{
                 <Details show={showDetails} projectDetails={projectInfo} textData={textData} closeDetails={() => { this.setState({ showDetails: false }) }}/>
                 {/* Projects Wrap Max width is 1100px */}
                 <ProjectsWrapper>
-                    <Headline>{textData.headline}</Headline>
+                    <Headline primary={true}>{textData.headline}</Headline>
                 </ProjectsWrapper>
                 <ProjectsMain>
                     {/* Projects Image Wrap width 100% */}
@@ -165,8 +165,8 @@ class Projects extends Component{
                     <ProjectsWrapperInfo>
                         <PrevButton onClick={this.previousProject} />
                         <ProjectInfo>
-                            <ProjectName>{projectInfo.projectName}</ProjectName>
-                            <ProjectDesc>{projectInfo.desc}</ProjectDesc>
+                            <ProjectName>{projectName}</ProjectName>
+                            <ProjectDesc>{desc}</ProjectDesc>
                         </ProjectInfo>
                         <NextButton onClick={this.nextProject} />
                     </ProjectsWrapperInfo>

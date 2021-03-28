@@ -1,16 +1,17 @@
 import React from 'react';
 import Toggle from '../Toggle';
 import {
-    HeroSectionContainer, HeroSectionWrap, Header, LogoText, Body, HalfWrap,
+    HeroSectionWrap, Header, LogoText, Body, HalfWrap,
     SideImage, TextWrap, Introduction, Name, JobIntroduction, Job, LastWord, DownloadCvButton
 } from './elements';
-import CV from '../../Files/english-cv.pdf';
+import MainContainer from '../GlobalComponent/MainContainer';
+import CV from '../../Files/Tengku-Davyan-CV-English.pdf';
 import Proud from '../../Images/HeroSection/proud_feeling.svg' 
 // Hero Section Container
 const HeroSection = ({ textData, language }) => {
     const {introduction,name,jobIntroduction,job1,lastWord,download} = textData;
     return (
-        <HeroSectionContainer id='home'>
+        <MainContainer primary={true} id='home'>
             <HeroSectionWrap>
                 <Header>
                     <LogoText>tengkudavyan</LogoText>
@@ -42,7 +43,7 @@ const HeroSection = ({ textData, language }) => {
                     </HalfWrap>
                 </Body>
             </HeroSectionWrap>
-        </HeroSectionContainer>
+        </MainContainer>
     );
 }
 

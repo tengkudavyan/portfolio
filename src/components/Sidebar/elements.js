@@ -1,7 +1,17 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import {primaryBlack,softWhite } from '../GlobalComponent/Color';
 import { Link } from 'react-scroll';
 
+// FlexBox Function
+const FlexBox = (direction,justifyContent,alignItems) => css`
+    display:flex;
+    flex-direction:${direction};
+    justify-content:${justifyContent};
+    align-items:${alignItems};
+`;
+
 export const SidebarContainer = styled.nav`
+    ${FlexBox('column')}
     position:fixed;
     z-index:999;
     left:20px;
@@ -9,28 +19,24 @@ export const SidebarContainer = styled.nav`
     transform: translate(0%, -50%);
     margin:auto;
     border-radius:11px;
-    background-color:#17252A;
-    display:flex;
-    flex-direction:column;
+    background-color:${primaryBlack};
     transition:300ms;
-    width:${({ open }) => (open ? '179px' : '51px')};
+    width:${({ open }) => open ? '179px' : '51px'};
    
     @media screen and (max-width:1225px){
         font-size:15px;
         left:15px;
-        width:${({ open }) => (open ? '140px' : '37px')};
+        width:${({ open }) => open ? '140px' : '37px'};
     }
     
 `;
 
 export const LinkItem = styled(Link)`
+    ${FlexBox('row','','center')}
     padding:10px 15px;
-    display:flex;
     border-radius:12px;
-    flex-direction:row;
-    align-items:center;
     transition:200ms;
-    color:#FEFFFF;
+    color:${softWhite};
     cursor:pointer;
 
     @media screen and (max-width:1250px){

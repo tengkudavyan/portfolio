@@ -1,14 +1,15 @@
 import React from 'react';
 import History from './history';
 import Language from './language';
-import { OthersContainer, OthersWrap, Headline, ContentsWrap } from './elements';
-
+import {OthersWrap, ContentsWrap } from './elements';
+import MainContainer from '../GlobalComponent/MainContainer';
+import Headline from '../GlobalComponent/Headline';
 // Others Section
 const Others = ({ textData }) => {
     return (
-        <OthersContainer id="others">
+        <MainContainer primary={true} id="others">
             <OthersWrap>
-                <Headline>{textData.headline}</Headline>
+                <Headline primary={false}>{textData.headline}</Headline>
                 <ContentsWrap>
                     {/* History Section */}
                     <History textData={textData.history} />
@@ -16,7 +17,7 @@ const Others = ({ textData }) => {
                     <Language textData={textData.language}/>
                 </ContentsWrap>
             </OthersWrap>
-        </OthersContainer>
+        </MainContainer>
     )
 }
 

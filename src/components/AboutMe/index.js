@@ -1,10 +1,11 @@
 import React from 'react';
-import { AboutMeContainer, AboutMeWrap, Wrap, AboutMeImage, Headline, Description } from './elements';
+import {AboutMeWrap, Wrap, AboutMeImage, Description,Headline } from './elements';
 import ProfileDetail from '../../Images/AboutMe/profile_detail.svg';
+import MainContainer from '../GlobalComponent/MainContainer';
 // About Me Section
 const AboutMe = ({ textData }) => {
     return (
-        <AboutMeContainer id='aboutMe'>
+        <MainContainer primary={false}id='aboutMe'>
             <AboutMeWrap>
                 {/* Image Container */}
                 <Wrap>
@@ -16,7 +17,7 @@ const AboutMe = ({ textData }) => {
                     <Description>{textData.description}</Description>
                 </Wrap>
             </AboutMeWrap>
-        </AboutMeContainer>
+        </MainContainer>
     );
 }
 

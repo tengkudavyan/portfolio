@@ -1,146 +1,100 @@
-import styled from 'styled-components';
+import styled,{css} from 'styled-components';
 import { VscTriangleRight, VscTriangleLeft } from 'react-icons/vsc';
+import { primaryGreen, primaryBlack, softWhite, softGray } from '../GlobalComponent/Color'
+import { FlexBox} from '../GlobalComponent/StylePackage';
+
 // Projects Container
 export const ProjectsContainer = styled.div`
+    ${FlexBox('column','','center')}
     width:100%;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
     min-height:800px;
-    background-color:#17252A;
+    background-color:${primaryBlack};
     overflow-x:hidden;
 `;
 
 // Projects Wrapper For Headline
 export const ProjectsWrapper = styled.div`
+    ${FlexBox('row','center','center')}
     width:100%;
     max-width:1100px;
-    display:flex;
-    justify-self:flex-start;
-    flex-direction:row;
-    align-items:center;
-    justify-content:center;
-    margin-left:75px;
-    margin-right:25px;
+    margin:0 25px 0 75px;
 `;
 
 // Main Container
 export const ProjectsMain = styled.div`
-    display:flex;
+    ${FlexBox('column','center','center')}
     flex:1;
     width:100%;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
 `;
 
 // Projects Info Wrapper
 export const ProjectsWrapperInfo = styled.div`
+    ${FlexBox('row','center','center')}
     width:100%;
     max-width:1100px;
-    display:flex;
     margin-top:20px;
-    flex-direction:row;
-    align-items:center;
-    justify-content:center;
-    margin-left:75px;
-    margin-right:25px;
+    margin:0 25px 0 75px;
 `;
 
 // Projects Thumbnail Wrapper
 export const ProjectsThumbnailWrapper = styled.div`
-    display:flex;
-    flex-direction:row;
-    align-items:center;
+    ${FlexBox('row','','center')}
     margin-bottom:20px;
     padding:40px 0;
     transform:translateX(${({ marginWidth }) => marginWidth}px);
     transition:500ms;
-    
 `;
 
-// Projects Headline
-export const Headline = styled.h1`
-    color:#3AAFA9;
-    font-size:45px;
-    font-weight:900;
-    margin-top:30px;
-    text-align:center;
-
-    @media screen and (max-width:600px){
-        font-size:40px;
-    }
-`;
 
 // Project Thumbnail
 export const ProjectThumbnail = styled.img`
     width:336px;
     height:173px;
     border-radius:20px;
-    margin-left:50px;
-    margin-right:50px;
+    margin:0 50px;
     transition:500ms;
     transform:${({ zoom }) => zoom ? "scale(1.4)" : "scale(1)"};
     opacity:${({ zoom }) => zoom ? "100%" : "90%"};
+    
+    @media screen and (max-width:600px){
+        width:224px;
+        height:115px;
+        margin:0 40px;
+    }
+`;
+
+const ControlButton = css`
+    width:80px;
+    height:80px;
+    color:${softGray};
+    transition:500ms;
+    cursor:pointer;
 
     &:hover{
-        color:#3AAFA9;
+        color:${primaryGreen};
         transform:scale(1.2);
     }
 
     @media screen and (max-width:600px){
-        width:224px;
-        height:115px;
-        margin-left:40px;
-        margin-right:40px;
+        width:60px;
+        height:60px;
     }
 `;
 
 // Control Button To Next 
 export const NextButton = styled(VscTriangleRight)`
-    width:80px;
-    height:80px;
-    color:#3B484D;
-    transition:500ms;
-    cursor:pointer;
-
-    &:hover{
-        color:#3AAFA9;
-        transform:scale(1.2);
-    }
-
-    @media screen and (max-width:600px){
-        width:60px;
-        height:60px;
-    }
+    ${ControlButton}
 `;
 
 // Control Button To Previous
 export const PrevButton = styled(VscTriangleLeft)`
-    width:80px;
-    height:80px;
-    color:#3B484D;
-    transition:500ms;
-    cursor:pointer;
-
-    &:hover{
-        color:#3AAFA9;
-        transform:scale(1.2);
-    }
-
-    @media screen and (max-width:600px){
-        width:60px;
-        height:60px;
-        
-    }
+    ${ControlButton}
 `;
 
 // Project Info Container
 export const ProjectInfo = styled.div`
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    color:#FEFFFF;
+    ${FlexBox('column','','center')}
+    color:${softWhite};
 `;
 
 // Project Name
@@ -168,9 +122,9 @@ export const ProjectDesc = styled.p`
 
 // Visit Button
 export const VisitButton = styled.a`
-    background-color:#3AAFA9;
+    background-color:${primaryGreen};
     opacity:${({showLink}) => showLink ? '100%' : '75%'};
-    color:#FEFFFF;
+    color:${softWhite};
     pointer-events:${({showLink}) => showLink ? 'auto' : 'none'};
     border-radius:10px;
     font-size:13px;
@@ -188,8 +142,8 @@ export const VisitButton = styled.a`
 
 // Detail Button
 export const DetailButton = styled.a`
-    background-color:#FEFFFF;
-    color:#17252A;
+    background-color:${softWhite};
+    color:${primaryBlack};
     border-radius:10px;
     font-size:13px;
     font-weight:700;
@@ -201,5 +155,4 @@ export const DetailButton = styled.a`
     &:hover{
         transform:scale(1.2);
     }
-
 `;

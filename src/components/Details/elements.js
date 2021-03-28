@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import { AiOutlineClose } from 'react-icons/ai';
+import { primaryGreen, primaryBlack, softWhite } from '../GlobalComponent/Color'
+import { FlexBox } from '../GlobalComponent/StylePackage';
 // Details Container
 export const DetailsContainer = styled.div`
     position:fixed;
@@ -24,7 +26,7 @@ export const DarkBackground = styled.div`
     left:0;
     z-index:99;
     opacity:50%;
-    background-color:#000000;
+    background-color:black;
 `;
 
 //Details Wrapper
@@ -32,11 +34,9 @@ export const DetailsWrapper = styled.div`
     position:relative;
     width:100%;
     max-width:800px;
-    margin-left:75px;
-    margin-right:25px;
-    /* height:600px; */
+    margin:0 25px 0 75px;
     z-index:1001;
-    background:#17252A;
+    background:${primaryBlack};
     border-radius:20px;
     padding:20px;
     
@@ -49,12 +49,12 @@ export const DetailsWrapper = styled.div`
 export const CloseButton = styled(AiOutlineClose)`
     width:30px;
     height:30px;
-    background-color:#FEFFFF;
+    background-color:${softWhite};
     position:absolute;
     top:-5px;
     right:-5px;
     z-index:1002;
-    color:#000000;
+    color:black;
     font-weight:bold;
     border-radius:10px;
     transition:200ms;
@@ -71,19 +71,16 @@ export const Headline = styled.h1`
     width:100%;
     font-size:30px;
     text-align:center;
-    color:#FEFFFF;
+    color:${softWhite};
     font-weight:700;
 `;
 
 // Details Body : Dividing to 2 part
 export const Body = styled.div`
+    ${FlexBox('row')}
     width:100%;
     margin-top:30px;
-    display:flex;
-    flex-direction:row;
     
-    
-
     @media screen and (max-width:860px){
         flex-direction:column-reverse;
 
@@ -92,8 +89,7 @@ export const Body = styled.div`
 
 // Body Wrap
 export const Wrap = styled.div`
-    display:flex;
-    flex-direction:column;
+    ${FlexBox('column')}
     flex:1;
     padding:10px 0;
     align-items:${({center}) => center ? 'center' : 'flex-start'};
@@ -110,16 +106,15 @@ export const SubHeadline = styled.h2`
     font-size:20px;
     margin-bottom:10px;
     font-weight:bold;
-    color:#FEFFFF;
+    color:${softWhite};
     margin-top:20px;
 `; 
 
 // Description
 export const Desc = styled.h3`
-    
     font-size:13px;
     font-weight:400;
-    color:#FEFFFF;
+    color:${softWhite};
 `;
 
 // Project Image
@@ -130,17 +125,14 @@ export const ProjectImage = styled.img`
 
 // Link Wrapper
 export const LinkWrapper = styled.div`
+    ${FlexBox('column','','center')}
     margin-top:20px;
-    display:flex;
     width:100%;
-    flex-direction:column;
-    align-items:center;
-
 `;
 // Link Button
 export const LinkButton = styled.a`
-    background-color:${({primary}) => primary ? '#3AAFA9' : '#FEFFFF'};
-    color:${({primary}) => primary ? '#FEFFFF' : '#17252A'};
+    background-color:${({primary}) => primary ? primaryGreen: softWhite};
+    color:${({primary}) => primary ? softWhite : primaryBlack};
     display:${({show}) => show ? 'block' : 'none'};
     width:60%;
     border-radius:15px;

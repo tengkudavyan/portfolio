@@ -64,7 +64,6 @@ export const eng = {
             desc: 'Front-End Website that i made with React JS Frameworks. The purpose of this website is to show my ability in Front-End Web Development specially in React Js Frameworks.',
             link: 'https://dolla.tengkudavyan.com',
             githubLink: 'https://github.com/tengkudavyan/dolla',
-            githubLink: 'https://github.com/tengkudavyan/React-Js-MoneySaver-FrontEnd',
             details:engDetail.dolla
         },
         trvl: {

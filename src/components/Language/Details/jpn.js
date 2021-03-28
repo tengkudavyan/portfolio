@@ -36,12 +36,7 @@ export const jpn = {
                     'フレームワーク: Django'
                 ]
             },
-            {
-                subHeadline: 'How To Test It',
-                desc: [
-                    
-                ]
-            }
+            
         ]
     },
     dolla: {

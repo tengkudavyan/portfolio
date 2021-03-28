@@ -45,7 +45,7 @@ const ContactList = ({ textData }) => {
             </ContactInfoContainer>
 
             {/* LinkedIn Contact Info */}
-            <ContactInfoContainer onClick={() => window.open("https://linkedin.com/in/tengku-davyan-034815193", "_blank")}>
+            <ContactInfoContainer onClick={() => window.open("https://linkedin.com/in/tengkudavyan", "_blank")}>
                 <AppLogo src={Linkedin} />
                 <ContactInfo>
                     <Info>{textData.linkedin}</Info>

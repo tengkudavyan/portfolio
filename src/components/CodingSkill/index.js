@@ -3,14 +3,15 @@ import FrontEnd from './frontend';
 import BackEnd from './backend';
 import Frameworks from './frameworks';
 import Database from './database';
-import { CodingSkillContainer, CodingSkillWrap, Headline, CodingCategoryWrapper} from './elements';
-
+import { CodingSkillWrap, CodingCategoryWrapper} from './elements';
+import  Headline  from '../GlobalComponent/Headline';
+import MainContainer from '../GlobalComponent/MainContainer';
 // Coding Skill Section
 const CodingSkill = ({ textData }) => {
     return (
-        <CodingSkillContainer id='codingSkill'>
+        <MainContainer primary={true} id='codingSkill'>
             <CodingSkillWrap>
-                <Headline>{textData.headline}</Headline>
+                <Headline primary={false}>{textData.headline}</Headline>
                 <CodingCategoryWrapper>
                     {/* Front End Category */}
                     <FrontEnd textData={textData}/>
@@ -22,7 +23,7 @@ const CodingSkill = ({ textData }) => {
                     <Database textData={textData}/>
                 </CodingCategoryWrapper>
             </CodingSkillWrap>
-        </CodingSkillContainer>
+        </MainContainer>
     );
 }
 

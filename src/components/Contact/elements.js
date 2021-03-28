@@ -1,27 +1,18 @@
 import styled from 'styled-components';
-
-// Contact Container
-export const ContactContainer = styled.div`
-    width:100%;
-    display:flex;
-    justify-content:center;
-    background-color:#17252A;
-`;
+import { primaryGreen,softWhite } from '../GlobalComponent/Color';
+import { FlexBox, CleanText } from '../GlobalComponent/StylePackage';
 
 // Contact Section Wrapper
 export const ContactWrapper = styled.div`
+    ${FlexBox('column','','center')}
     width:100%;
     max-width:1100px;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    margin-left:75px;
-    margin-right:25px;
+    margin:0 25px 0 75px;
 `;
 
 // Contact Section Headline
 export const Headline = styled.h1`
-    color:#3AAFA9;
+    color:${primaryGreen};
     font-size:45px;
     font-weight:900;
     margin-top:30px;
@@ -34,11 +25,9 @@ export const Headline = styled.h1`
 
 // Contents Wrapper
 export const ContentsWrap = styled.div`
+    ${FlexBox('row')}
     width:100%;
-    display:flex;
-    flex-direction:row;
-    margin-top:30px;
-    margin-bottom:30px;
+    margin:30px 0;
 
     @media screen and (max-width:860px){
         flex-direction:column;
@@ -47,12 +36,10 @@ export const ContentsWrap = styled.div`
 
 // Contact Wrap
 export const Wrap = styled.div`
+    ${FlexBox('column','','flex-start')}
     flex:1;
-    display:flex;
-    flex-direction:column;
     margin:20px 40px;
     padding:0 10px;
-    align-items:flex-start;
 
     @media screen and (max-width:1225px){
         margin:20px 20px;
@@ -68,7 +55,7 @@ export const Wrap = styled.div`
 // Contact Input Label
 export const InputLabel = styled.label`
     font-size:13px;
-    color:#FEFFFF;
+    color:${softWhite};
     font-weight:700;
     display:block;
 
@@ -79,8 +66,8 @@ export const InputData = styled.input`
     margin-top:10px;
     margin-bottom:20px;
     font-size:15px;
-    color:#FEFFFF;
-    border:2px solid #FEFFFF;
+    color:${softWhite};
+    border:2px solid ${softWhite};
     background-color:transparent;
     padding:10px 15px;
     outline:none;
@@ -91,14 +78,15 @@ export const InputData = styled.input`
 
 // Contact Input Message
 export const InputMessage = styled.textarea`
-    margin-top:5px;
+    ${CleanText}
+    margin-top:10px;
     font-size:15px;
-    color:#FEFFFF;
-    border:2px solid #FEFFFF;
+    flex:1;
+    color:${softWhite};
+    border:2px solid ${softWhite};
     background-color:transparent;
     padding:10px 15px;
     width:90%;
-    outline:none;
     border-radius:10px;
 `;
 
@@ -107,14 +95,14 @@ export const SendButton = styled.button`
     margin-top:20px;
     border:0;
     font-weight:700;
-    color:#FEFFFF;
+    color:${softWhite};
     font-size:15px;
     padding:10px 20px;
     border-radius:10px;
     background-color:#3AAFA9;
     cursor: pointer;
     transition:200ms;
-    outline:none;
+    ${CleanText}
 
     &:hover{
         transform:scale(1.1);
@@ -123,7 +111,7 @@ export const SendButton = styled.button`
 
 // Send Message Success
 export const SendSuccess = styled.h2`
-    color:#FEFFFF;
+    color:${softWhite};
     padding:${props => props.show ? '15px 15px' : '0px 15px'};
     width:90%;
     background-color:#4BB543;
@@ -137,7 +125,7 @@ export const SendSuccess = styled.h2`
 
 // Hint 
 export const Hint = styled.p`
-    color:#FEFFFF;
+    color:${softWhite};
     font-size:15px;
     margin:10px 0;
     font-weight:bold;
@@ -146,11 +134,10 @@ export const Hint = styled.p`
 
 // Contact Info Container
 export const ContactInfoContainer = styled.div`
-    display:flex;
+    ${FlexBox('row')}
     margin:7px 10px;
     padding:7px 10px;
-    flex-direction:row;
-    color:#FEFFFF;
+    color:${softWhite};
     transition:500ms;
     border-radius:10px;
     align-self:flex-start;
@@ -162,7 +149,7 @@ export const ContactInfoContainer = styled.div`
     }
 
     &:hover{
-        background:#FEFFFF;
+        background:${softWhite};
         color:#17252A;
         transform:scale(1.05);
     }
@@ -176,17 +163,14 @@ export const AppLogo = styled.img`
 
 // Contact Info
 export const ContactInfo = styled.div`
-    display:flex;
-    justify-content:center;
-    flex-direction:column;
+    ${FlexBox('column','center')}
     box-sizing:border-box;
     margin-left:20px;
 `;
 
 // Info
 export const Info = styled.div`
-    display:flex;
-    align-items:center;
+    ${FlexBox('','','center')}
     font-size:15px;
     flex:1;
 `;
@@ -195,7 +179,5 @@ export const Info = styled.div`
 export const Copyright = styled.small`
     font-size:15px;
     margin:10px 0 30px 0 ;
-    color:#FEFFFF;
-    
-
+    color:${softWhite};
 `;

@@ -1,21 +1,14 @@
 // Importing necessary thing
 import styled from 'styled-components';
-
-// Most Outside Part Of HeroSection
-export const HeroSectionContainer = styled.div`
-    width:100%;
-    display:flex;
-    justify-content:center;
-    min-height:800px;
-    background-color:#3AAFA9;
-`;
+import { primaryBlack, softWhite } from '../GlobalComponent/Color';
+import { FlexBox, CleanText } from '../GlobalComponent/StylePackage';
 
 // Wrap to keep component in 1100px
 export const HeroSectionWrap = styled.div`
     width:100%;
     max-width:1100px;
     display:flex;
-    flex-direction:column;
+    ${FlexBox('column','center')}
     margin-left:75px;
     margin-right:25px;
     margin-bottom:20px;
@@ -28,17 +21,14 @@ export const HeroSectionWrap = styled.div`
 // Header part of hero section
 export const Header = styled.div`
     width:100%;
-    display:flex;
-    flex-direction:row;
-    justify-content:space-between;
-    align-items:center;
+    ${FlexBox('row','space-between','center')}
     padding:15px 0;
     box-sizing:border-box;
 `;
 
 // Portfolio Logo
 export const LogoText = styled.h1`
-    color:#FEFFFF;
+    color:${softWhite};
     font-size:25px;
     font-weight:bold;
 
@@ -50,8 +40,7 @@ export const LogoText = styled.h1`
 
 // Body Part
 export const Body = styled.div`
-    display:flex;
-    flex-direction:row;
+    ${FlexBox('row')}
     width:100%;
     flex:1;
 
@@ -66,20 +55,15 @@ export const Body = styled.div`
 
 // Make Wrap in to 2 part
 export const HalfWrap = styled.div`
+    ${FlexBox('column','center','center')}
     flex:1;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
 `;
 
 // Introduction Text Container
 export const TextWrap = styled.div`
     width:100%;
-    display:flex;
-    flex-direction:row;
+    ${FlexBox('row','','align-items')}
     flex-wrap:wrap;
-    align-items:center;
 `;
 
 // Introduction Text
@@ -101,7 +85,7 @@ export const Introduction = styled.h2`
 
 // Name Text
 export const Name = styled.h1`
-    color:#17252A;
+    color:${primaryBlack};
     font-size:45px;
     font-weight:700;
     width:100%;
@@ -122,7 +106,7 @@ export const Name = styled.h1`
 
 // Job Introduction Text
 export const JobIntroduction = styled.h2`
-    color:#FEFFFF;
+    color:${softWhite};
     font-size:30px;
     font-weight:500;
     margin-bottom:2px;
@@ -139,7 +123,7 @@ export const JobIntroduction = styled.h2`
 
 // Job Text
 export const Job = styled.h1`
-    color:#17252A;
+    color:${primaryBlack};
     font-size:40px;
     font-weight:700;
     margin-bottom:2px; 
@@ -156,7 +140,7 @@ export const Job = styled.h1`
 
 // Last Word Text
 export const LastWord = styled.h2`
-    color:#FEFFFF;
+    color:${softWhite};
     font-size:30px;
     font-weight:500;
     margin-bottom:2px;
@@ -171,21 +155,18 @@ export const LastWord = styled.h2`
 `;
 
 export const DownloadCvButton = styled.a`
-    background-color:#FEFFFF;
-    color:#17252A;
-    font-size:15px;
-    margin-top:15px;
-    display:flex;
+    ${FlexBox('','center')}
     align-self:flex-start;
+    background-color:${softWhite};
+    color:${primaryBlack};
+    font-size:15px;
     font-weight:700;
-    justify-content:center;
+    margin-top:15px;
     padding:10px 25px;
     border-radius:50px;
-    outline:0;
-    border:0;
     transition:300ms;
-    text-decoration:none;
     cursor:pointer;
+    ${CleanText}
 
     @media screen and (max-width:1100px){
         font-size:13px;

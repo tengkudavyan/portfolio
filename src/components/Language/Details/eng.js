@@ -36,12 +36,7 @@ export const eng = {
                     'Framework : Django'
                 ]
             },
-            {
-                subHeadline: 'How To Test It',
-                desc: [
-                    
-                ]
-            }
+            
         ]
     },
     dolla: {
