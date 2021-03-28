@@ -4,6 +4,7 @@ import Python from '../../Images/CodingSkills/python.png';
 import JavaScript from '../../Images/CodingSkills/javascript.png';
 import Java from '../../Images/CodingSkills/java.png';
 import Php from '../../Images/CodingSkills/php.png';
+import Sharp from '../../Images/CodingSkills/csharp.svg';
 
 // Coding Category Back End
 const BackEnd = ({ textData }) => {
@@ -34,6 +35,12 @@ const BackEnd = ({ textData }) => {
                     <Experience>{textData.experience.php}</Experience>
                     <LanguageImage src={Php} />
                     <LanguageName>PHP</LanguageName>
+                </CodingLanguage>
+                {/* Coding Langauge PHP */}
+                <CodingLanguage>
+                    <Experience>{textData.experience.cSharp}</Experience>
+                    <LanguageImage src={Sharp} />
+                    <LanguageName>C#</LanguageName>
                 </CodingLanguage>
             </CodingLanguageContainer>
         </CodingCategory>

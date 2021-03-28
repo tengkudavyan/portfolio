@@ -2,6 +2,7 @@ import React from 'react';
 import { CodingCategory, SubHeadline, CodingLanguageContainer, CodingLanguage, LanguageImage, LanguageName,Experience } from './elements';
 import MySql from '../../Images/CodingSkills/mysql.png';
 import Mongo from '../../Images/CodingSkills/mongodb.png';
+import SQL from '../../Images/CodingSkills/sqlServer.svg';
 // Coding Category Database
 const Database = ({ textData }) => {
     return (
@@ -19,6 +20,12 @@ const Database = ({ textData }) => {
                     <Experience>{textData.experience.mongoDB}</Experience>
                     <LanguageImage src={Mongo} />
                     <LanguageName>MongoDB</LanguageName>
+                </CodingLanguage> 
+                 {/* Database SQL Server */}
+                 <CodingLanguage>
+                    <Experience>{textData.experience.sqlServer}</Experience>
+                    <LanguageImage src={SQL} />
+                    <LanguageName>SQL Server</LanguageName>
                 </CodingLanguage>    
             </CodingLanguageContainer>
         </CodingCategory> 
