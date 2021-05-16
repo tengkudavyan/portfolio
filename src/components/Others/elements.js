@@ -53,7 +53,7 @@ export const SubHeadline = styled.h2`
 
 // Others Sub Container
 export const OthersContent = styled.div`
-    ${FlexBox('column','center')}
+    ${FlexBox('column','flex-start')}
     flex:1;
     width:100%;
     position:relative;
@@ -119,6 +119,7 @@ export const HistorySubHeadline = styled.h2`
     font-size:15px;
     font-weight:400;
     margin-top:5px;
+    white-space:pre-wrap;
 
     @media screen and (max-width:1225px){
         font-size:13px;

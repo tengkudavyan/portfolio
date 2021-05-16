@@ -12,26 +12,18 @@ const History = ({ textData }) => {
             <SubHeadline>{textData.headline}</SubHeadline>
             <OthersContent>
                 <ScrollLine/>
-                {/* First History */}
-                <HistoryContainer>
+                {textData.contents.map((val,i) => 
+                <HistoryContainer key={i}>
                     <GreenDotContainer>
                         <GreenDot />
                     </GreenDotContainer>
                     <HistoryText>
-                        <HistoryHeadline>{textData.history1.headline}</HistoryHeadline>
-                        <HistorySubHeadline>{textData.history1.subHeadline}</HistorySubHeadline>
-                        <HistoryPlaceTime>{textData.history1.timePlace}</HistoryPlaceTime>
+                        <HistoryHeadline>{val.headline}</HistoryHeadline>
+                        <HistorySubHeadline>{val.subHeadline}</HistorySubHeadline>
+                        <HistoryPlaceTime>{val.timePlace}</HistoryPlaceTime>
                     </HistoryText>
-                </HistoryContainer>
-                {/* Second History */}
-                <HistoryContainer>
-                    <GreenDot />
-                    <HistoryText>
-                        <HistoryHeadline>{textData.history2.headline}</HistoryHeadline>
-                        <HistorySubHeadline>{textData.history2.subHeadline}</HistorySubHeadline>
-                        <HistoryPlaceTime>{textData.history2.timePlace}</HistoryPlaceTime>
-                    </HistoryText>
-                </HistoryContainer>
+                    </HistoryContainer>
+                    )}
             </OthersContent>
         </SectionContainer>
     )

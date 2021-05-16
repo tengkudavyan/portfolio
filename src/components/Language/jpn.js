@@ -27,28 +27,95 @@ export const jpn = {
     },
     coding: {
         headline: "コーディング力",
-        frontEnd: "フロントエンド",
-        backEnd: "バックエンド",
-        frameworks: "フレームワーク",
-        database: "データベース",
-        experience: {
-            html: '4年間',
-            css: '4年間',
-            python: '1年間',
-            javaScript: '３年間',
-            java: '３年間',
-            php: '３年間',
-            reactJs: '３年間',
-            django: '1年間',
-            reactNative:'3年間',
-            mysql: '2年間',
-            mongoDB:'6ヶ月',
-            cSharp:'<6ヶ月',
-            vueJs:'<6ヶ月',
-            dotnet:'<6ヶ月',
-            sqlServer:'<6ヶ月'
-            
-        }
+        content: [
+            { // Front End Section
+                title: "フロントエンド",
+                skills: [
+                    {
+                        name: "HTML 5",
+                        year: "4年間",
+                        img: "html5.png"
+                    }, {
+                        name: "CSS",
+                        year: "4年間",
+                        img : "css.png"
+                    }
+                ]
+            },
+            { // Backend Section
+                title: "バックエンド",
+                skills: [
+                    {
+                        name: "Python",
+                        year: "1年間",
+                        img: "python.png"
+                    }, {
+                        name: "JavaScript",
+                        year: "３年間",
+                        img : "javascript.png"
+                    },{
+                        name: "Java",
+                        year: "３年間",
+                        img : "java.png"
+                    },{
+                        name: "PHP",
+                        year: "３年間",
+                        img : "php.png"
+                    },{
+                        name: "C#",
+                        year: "6ヶ月",
+                        img : "csharp.svg"
+                    },
+                    
+                ]
+            },
+            { // Framework Section
+                title: "フレームワーク",
+                skills: [
+                    {
+                        name: "React JS",
+                        year: "３年間",
+                        img: "react.png"
+                    }, {
+                        name: "Django",
+                        year: "1年間",
+                        img : "django.png"
+                    },{
+                        name: "React Native",
+                        year: "３年間",
+                        img : "react.png"
+                    },{
+                        name: "Vue JS",
+                        year: "6ヶ月",
+                        img : "vue.png"
+                    },{
+                        name: ".NET Core",
+                        year: "6ヶ月",
+                        img : "dotnet.png"
+                    },
+                    
+                ]
+            },
+            { // Database Section
+                title: "データベース",
+                skills: [
+                    {
+                        name: "MySQL",
+                        year: "2年間",
+                        img: "mysql.png"
+                    }, {
+                        name: "MongoDB",
+                        year: "1年間",
+                        img : "mongodb.png"
+                    },{
+                        name: "SQL Server",
+                        year: "6ヶ月",
+                        img : "sqlServer.svg"
+                    }
+                ]
+            },
+
+        ]
     },
     projects: {
         headline: "プロジェクト",
@@ -86,16 +153,17 @@ export const jpn = {
         headline: "他のこと",
         history: {
             headline: "経験",
-            history1: {
+            contents: [
+                {
                 headline: 'メダンの専門学校９',
                 subHeadline: '- ソフトウェアエンジニア',
                 timePlace:'メダン, インドネシア (2017年 ー 2020年)'
             },
-            history2: {
+            {
                 headline: 'モバイルアプリ開発のフリーランサー仕事',
                 subHeadline: '- React Nativeでモバイルアップリのフロントエンドを開発しました',
                 timePlace:'メダン, インドネシア (2019年)'
-            }
+            }]
         },
         language: {
             headline: "言語",

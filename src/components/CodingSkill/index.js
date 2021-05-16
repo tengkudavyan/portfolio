@@ -1,8 +1,5 @@
 import React from 'react';
-import FrontEnd from './frontend';
-import BackEnd from './backend';
-import Frameworks from './frameworks';
-import Database from './database';
+import SkillSection from './SkillSection';
 import { CodingSkillWrap, CodingCategoryWrapper} from './elements';
 import  Headline  from '../GlobalComponent/Headline';
 import MainContainer from '../GlobalComponent/MainContainer';
@@ -13,14 +10,7 @@ const CodingSkill = ({ textData }) => {
             <CodingSkillWrap>
                 <Headline primary={false}>{textData.headline}</Headline>
                 <CodingCategoryWrapper>
-                    {/* Front End Category */}
-                    <FrontEnd textData={textData}/>
-                    {/* Back End Category */}
-                    <BackEnd textData={textData}/>
-                    {/* Frameworks Category */}
-                    <Frameworks textData={textData}/>
-                    {/* Database Category */}
-                    <Database textData={textData}/>
+                    {textData.content.map(val => <SkillSection data={val} key={val.title}/>)}
                 </CodingCategoryWrapper>
             </CodingSkillWrap>
         </MainContainer>

@@ -19,10 +19,10 @@ const ProjectDetails = ({detail}) => {
         detail.contents.map(content =>
             <>
                 {/* Get Detail Headline */}
-                <SubHeadline>{content.subHeadline}</SubHeadline>
+                <SubHeadline key={content.subHeadline}>{content.subHeadline}</SubHeadline>
                 {/* Mapping Detail Description */}
-                {content.desc.map(description =>
-                    <Desc>{description}</Desc>
+                {content.desc.map((description,i) =>
+                    <Desc key={i}>{description}</Desc>
                 )}
             </>
         )

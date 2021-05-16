@@ -22,32 +22,99 @@ export const eng = {
     },
     aboutMe: {
         headline:"WHO AM I ?",
-        description:"I am a passionate, ambitious and hardworking, with skills and experience in website development, mobile application development and design. I have been programming for 4 years. I always passionate to make an application that help many people. Everyday i always motivated learn something new to develop myself. I have experience in web development, mobile application development and desktop development either in front-end or back-end. 2 years ago, i have made mobile application front-end with React Native as a freelancer. I don't really have professional experience, and i like to take my programming skill to professional work."
+        description:"I am a passionate, ambitious and hardworking, with skills and experience in website development, mobile application development and design. I have been programming for 5 years. I always passionate to make an application that help many people. Everyday i always motivated learn something new to develop myself. I have experience in web development, mobile application development and desktop development either in front-end or back-end."
     },
     coding: {
         headline: "CODING SKILLS",
-        frontEnd: "FRONT END",
-        backEnd: "BACKEND",
-        frameworks: "FRAMEWORKS",
-        database: "DATABASE",
-        experience: {
-            html: '4 Years',
-            css: '4 Years',
-            python: '1 Years',
-            javaScript: '3 Years',
-            java: '3 Years',
-            cSharp:'<6 Months',
-            php: '3 Years',
-            reactJs: '3 Years',
-            vueJs:'<6 Months',
-            django: '1 Years',
-            dotnet:'<6 Months',
-            reactNative:'3 Years',
-            mysql: '2 Years',
-            mongoDB:'6 Months',
-            sqlServer:'<6 Months'
-            
-        }
+        content: [
+            { // Front End Section
+                title: "FRONT END",
+                skills: [
+                    {
+                        name: "HTML 5",
+                        year: "4 Years",
+                        img: "html5.png"
+                    }, {
+                        name: "CSS",
+                        year: "4 Years",
+                        img : "css.png"
+                    }
+                ]
+            },
+            { // Backend Section
+                title: "BACK END",
+                skills: [
+                    {
+                        name: "Python",
+                        year: "1 Years",
+                        img: "python.png"
+                    }, {
+                        name: "JavaScript",
+                        year: "3 Years",
+                        img : "javascript.png"
+                    },{
+                        name: "Java",
+                        year: "3 Years",
+                        img : "java.png"
+                    },{
+                        name: "PHP",
+                        year: "3 Years",
+                        img : "php.png"
+                    },{
+                        name: "C#",
+                        year: "6 Months",
+                        img : "csharp.svg"
+                    },
+                    
+                ]
+            },
+            { // Framework Section
+                title: "FRAMEWORKS",
+                skills: [
+                    {
+                        name: "React JS",
+                        year: "3 Years",
+                        img: "react.png"
+                    }, {
+                        name: "Django",
+                        year: "1 Years",
+                        img : "django.png"
+                    },{
+                        name: "React Native",
+                        year: "3 Years",
+                        img : "react.png"
+                    },{
+                        name: "Vue JS",
+                        year: "6 Months",
+                        img : "vue.png"
+                    },{
+                        name: ".NET Core",
+                        year: "6 Months",
+                        img : "dotnet.png"
+                    },
+                    
+                ]
+            },
+            { // Database Section
+                title: "DATABASE",
+                skills: [
+                    {
+                        name: "MySQL",
+                        year: "2 Years",
+                        img: "mysql.png"
+                    }, {
+                        name: "MongoDB",
+                        year: "1 Years",
+                        img : "mongodb.png"
+                    },{
+                        name: "SQL Server",
+                        year: "6 Months",
+                        img : "sqlServer.svg"
+                    }
+                ]
+            },
+
+        ]
     },
     projects: {
         headline: "PROJECTS",
@@ -85,16 +152,25 @@ export const eng = {
         headline: "OTHERS",
         history: {
             headline: "HISTORY",
-            history1: {
-                headline: 'Vocational School District 9 Medan',
-                subHeadline: '- Software Engineering Field',
-                timePlace:'Medan, Indonesia (2017 to 2020)'
-            },
-            history2: {
-                headline: 'Mobile Developer Freelance Work',
-                subHeadline: '- Made a Mobile App Front-End With React Native',
-                timePlace:'Medan, Indonesia (2019)'
-            }
+            contents: [
+                {
+                    headline: 'Fullstack Developer - PT. Cipta Kerja Indonesia',
+                    subHeadline: '- Make Fullrest API Backend\n- Implement UI/UX Design To Frontend\n- Implement Fullrest API To Frontend\n- Design Database Structure',
+                    timePlace:'Medan, Indonesia (Feb 2021 to now)'
+                },
+                {
+                    headline: 'Vocational School District 9 Medan',
+                    subHeadline: '- Software Engineering Field',
+                    timePlace:'Medan, Indonesia (Jul 2017 to Jun 2020)'
+                },
+                {
+                    headline: 'Mobile Developer Freelance Work',
+                    subHeadline: '- Made a Mobile App Front-End With React Native',
+                    timePlace:'Medan, Indonesia (Mar 2019)'
+                },
+                
+            ]
+            
         },
         language: {
             headline: "LANGUAGE",
