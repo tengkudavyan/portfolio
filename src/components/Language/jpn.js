@@ -114,6 +114,20 @@ export const jpn = {
                     }
                 ]
             },
+            { // Other Section
+                title:"他の",
+                skills:[
+                    {
+                        name:"GIT",
+                        year:"1年間",
+                        img: "git.png"
+                    },{
+                        name:"Restful API",
+                        year:"1年鑑",
+                        img :"rest.png"
+                    },
+                ]
+            }
 
         ]
     },

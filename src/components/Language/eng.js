@@ -113,6 +113,20 @@ export const eng = {
                     }
                 ]
             },
+            { // Other Section
+                title:"OTHERS",
+                skills:[
+                    {
+                        name:"GIT",
+                        year:"1 Years",
+                        img: "git.png"
+                    },{
+                        name:"Restful API",
+                        year:"1 Years",
+                        img :"rest.png"
+                    },
+                ]
+            }
 
         ]
     },

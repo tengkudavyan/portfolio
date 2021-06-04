@@ -1,7 +1,6 @@
 {
-    "editor.fontSize" : 18,
-    "window.zoomLevel" : -1,
-    "terminal.integrated.fontSize" :15,
+    "editor.fontSize" : 15,
+    "terminal.integrated.fontSize":15,
     "workbench.colorTheme" : "One Dark Pro",
     "workbench.iconTheme": "vscode-icons",
     "font-switcher.enableLivePreview": true,
