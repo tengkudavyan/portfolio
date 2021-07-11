@@ -168,9 +168,14 @@ export const eng = {
             headline: "HISTORY",
             contents: [
                 {
+                    headline: "Web Developer - Two Miner PTE. LTD.",
+                    subHeadline: "- Developing Website",
+                    timePlace: "Medan, Indonesia (Jun 2021 to now)"
+                },
+                {
                     headline: 'Fullstack Developer - PT. Cipta Kerja Indonesia',
                     subHeadline: '- Make Fullrest API Backend\n- Implement UI/UX Design To Frontend\n- Implement Fullrest API To Frontend\n- Design Database Structure',
-                    timePlace:'Medan, Indonesia (Feb 2021 to now)'
+                    timePlace:'Medan, Indonesia (Feb 2021 to Jun 2021)'
                 },
                 {
                     headline: 'Vocational School District 9 Medan',

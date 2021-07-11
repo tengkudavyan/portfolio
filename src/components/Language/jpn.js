@@ -169,15 +169,26 @@ export const jpn = {
             headline: "経験",
             contents: [
                 {
-                headline: 'メダンの専門学校９',
-                subHeadline: '- ソフトウェアエンジニア',
-                timePlace:'メダン, インドネシア (2017年 ー 2020年)'
-            },
-            {
-                headline: 'モバイルアプリ開発のフリーランサー仕事',
-                subHeadline: '- React Nativeでモバイルアップリのフロントエンドを開発しました',
-                timePlace:'メダン, インドネシア (2019年)'
-            }]
+                    headline:"ウェブ開発者 - Two Miner PTE. LTD.",
+                    subHeadline:"- ウェブを開発する",
+                    timePlace: "メダン、インドネシア (6月 2021年 ー 今)"
+                },
+                {
+                    headline:"フルスタック開発者 - PT. Cipta Kerja Indonesia",
+                    subHeadline:"- FullrestAPIバックエンドを作成する\n- フロントエンドにUI / UXデザインを実装する",
+                    timePlace: "メダン、インドネシア (2月 2021年 ー 6月 2021)"
+                },
+                {
+                    headline: 'メダンの専門学校９',
+                    subHeadline: '- ソフトウェアエンジニア',
+                    timePlace:'メダン, インドネシア (2017年 ー 2020年)'
+                },
+                {
+                    headline: 'モバイルアプリ開発のフリーランサー仕事',
+                    subHeadline: '- React Nativeでモバイルアップリのフロントエンドを開発しました',
+                    timePlace:'メダン, インドネシア (2019年)'
+                }
+            ]
         },
         language: {
             headline: "言語",
