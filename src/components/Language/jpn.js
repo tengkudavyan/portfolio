@@ -65,7 +65,11 @@ export const jpn = {
                         name: "C#",
                         year: "6ヶ月",
                         img : "csharp.svg"
-                    },
+                    },{
+                        name: "Swift", 
+                        year: "<6ヶ月",
+                        img: "swift.png"
+                    }
                     
                 ]
             },
@@ -81,10 +85,6 @@ export const jpn = {
                         year: "1年間",
                         img : "django.png"
                     },{
-                        name: "React Native",
-                        year: "３年間",
-                        img : "react.png"
-                    },{
                         name: "Vue JS",
                         year: "6ヶ月",
                         img : "vue.png"
@@ -94,6 +94,26 @@ export const jpn = {
                         img : "dotnet.png"
                     },
                     
+                ]
+            },
+            {
+                title: "モバイル",
+                skills: [
+                    {
+                        name: "React Native",
+                        year: "3年間",
+                        img : "react.png"
+                    }, 
+                    {
+                        name: "Flutter", 
+                        year: "<6ヶ月",
+                        img: "flutter.png"
+                    },
+                    {
+                        name: "iOS", 
+                        year: "<6ヶ月", 
+                        img: "ios.png"
+                    }
                 ]
             },
             { // Database Section
@@ -114,6 +134,7 @@ export const jpn = {
                     }
                 ]
             },
+
             { // Other Section
                 title:"他の",
                 skills:[

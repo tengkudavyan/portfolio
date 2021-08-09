@@ -33,11 +33,13 @@ export const eng = {
                     {
                         name: "HTML 5",
                         year: "4 Years",
-                        img: "html5.png"
+                        img: "html5.png",
+                        rating: "5/5"
                     }, {
                         name: "CSS",
                         year: "4 Years",
-                        img : "css.png"
+                        img : "css.png",
+                        rating: "5/5"
                     }
                 ]
             },
@@ -47,25 +49,34 @@ export const eng = {
                     {
                         name: "Python",
                         year: "1 Years",
-                        img: "python.png"
+                        img: "python.png",
+                        rating: "4/5"
                     }, {
                         name: "JavaScript",
                         year: "3 Years",
-                        img : "javascript.png"
+                        img : "javascript.png",
+                        rating: "5/5"
                     },{
                         name: "Java",
                         year: "3 Years",
-                        img : "java.png"
+                        img : "java.png",
+                        rating: "3/5"
                     },{
                         name: "PHP",
                         year: "3 Years",
-                        img : "php.png"
+                        img : "php.png",
+                        rating: "4/5"
                     },{
                         name: "C#",
                         year: "6 Months",
-                        img : "csharp.svg"
-                    },
-                    
+                        img : "csharp.svg",
+                        rating: "3/5"
+                    },{
+                        name: "Swift", 
+                        year: "<6 Months",
+                        img: "swift.png",
+                        rating: "3/5"
+                    }
                 ]
             },
             { // Framework Section
@@ -80,10 +91,6 @@ export const eng = {
                         year: "1 Years",
                         img : "django.png"
                     },{
-                        name: "React Native",
-                        year: "3 Years",
-                        img : "react.png"
-                    },{
                         name: "Vue JS",
                         year: "6 Months",
                         img : "vue.png"
@@ -93,6 +100,26 @@ export const eng = {
                         img : "dotnet.png"
                     },
                     
+                ]
+            },
+            {
+                title: "MOBILE",
+                skills: [
+                    {
+                        name: "React Native",
+                        year: "3 Years",
+                        img : "react.png"
+                    }, 
+                    {
+                        name: "Flutter", 
+                        year: "<6 Months",
+                        img: "flutter.png"
+                    },
+                    {
+                        name: "iOS", 
+                        year: "<6 Months", 
+                        img: "ios.png"
+                    }
                 ]
             },
             { // Database Section

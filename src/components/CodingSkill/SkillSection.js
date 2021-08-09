@@ -9,7 +9,7 @@ const SkillSection = ({ data }) => {
                 {data.skills.map(val => {
                     return (
                         <CodingLanguage key={val.name}>
-                            <Experience>{val.year}</Experience>
+                            {/* <Experience>{val.year}</Experience> */}
                             <LanguageImage src={require(`../../Images/CodingSkills/${val.img}`).default}/>
                             <LanguageName>{val.name}</LanguageName>
                         </CodingLanguage>
