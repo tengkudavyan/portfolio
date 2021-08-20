@@ -76,6 +76,12 @@ export const eng = {
                         year: "<6 Months",
                         img: "swift.png",
                         rating: "3/5"
+                    },
+                    {
+                        name: "Go(lang)", 
+                        year: "<6 Months",
+                        img: "go.png",
+                        rating: "3/5"
                     }
                 ]
             },
@@ -195,7 +201,7 @@ export const eng = {
             headline: "HISTORY",
             contents: [
                 {
-                    headline: "Web Developer - Two Miner PTE. LTD.",
+                    headline: "Web Developer - YVentures Group PTE. LTD.",
                     subHeadline: "- Developing Website",
                     timePlace: "Medan, Indonesia (Jun 2021 to now)"
                 },

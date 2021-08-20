@@ -190,7 +190,7 @@ export const jpn = {
             headline: "経験",
             contents: [
                 {
-                    headline:"ウェブ開発者 - Two Miner PTE. LTD.",
+                    headline:"ウェブ開発者 - YVentures Group PTE. LTD.",
                     subHeadline:"- ウェブを開発する",
                     timePlace: "メダン、インドネシア (6月 2021年 ー 今)"
                 },
