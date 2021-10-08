@@ -39,11 +39,11 @@ export const Headline = styled.h1`
     }
 
     @media screen and (max-width:860px){
-        font-size:40px;
+        font-size:35px;
     }
 
     @media screen and (max-width:500px){
-        font-size:38px;
+        font-size:30px;
     }
 `;
 
@@ -57,5 +57,13 @@ export const Description = styled.p`
 
     @media screen and (max-width:1225px){
         padding:0 10px 0 10px;
+    }
+
+    @media screen and (max-width:860px){
+        font-size:17px;
+    }
+
+    @media screen and (max-width:500px){
+        font-size:16px;
     }
 `;

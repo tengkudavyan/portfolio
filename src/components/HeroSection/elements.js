@@ -12,10 +12,6 @@ export const HeroSectionWrap = styled.div`
     margin-left:75px;
     margin-right:25px;
     margin-bottom:20px;
-
-    /* @media screen and (max-width:1100px){
-        margin:0 1px;
-    } */
 `;
 
 // Header part of hero section
@@ -78,7 +74,7 @@ export const Introduction = styled.h2`
     }
 
     @media screen and (max-width:860px){
-        font-size:25px;
+        font-size:20px;
     }
     
 `;
@@ -96,11 +92,11 @@ export const Name = styled.h1`
     }
     
     @media screen and (max-width:860px){
-        font-size:45px;
+        font-size:42px;
     }
 
-    @media screen and (max-width:500px){
-        font-size:40px;
+    @media screen and (max-width:600px){
+        font-size:35px;
     }   
 `;
 
@@ -117,8 +113,10 @@ export const JobIntroduction = styled.h2`
     }
 
     @media screen and (max-width:860px){
-        font-size:30px;
+        font-size:20px;
     }
+
+   
 `;
 
 // Job Text
@@ -134,7 +132,7 @@ export const Job = styled.h1`
     }
 
     @media screen and (max-width:860px){
-        font-size:35px;
+        font-size:25px;
     }
 `;
 

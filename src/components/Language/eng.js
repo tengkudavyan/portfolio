@@ -211,18 +211,11 @@ export const eng = {
                     timePlace:'Medan, Indonesia (Feb 2021 to Jun 2021)'
                 },
                 {
-                    headline: 'Vocational School District 9 Medan',
-                    subHeadline: '- Software Engineering Field',
-                    timePlace:'Medan, Indonesia (Jul 2017 to Jun 2020)'
-                },
-                {
                     headline: 'Mobile Developer Freelance Work',
-                    subHeadline: '- Made a Mobile App Front-End With React Native',
+                    subHeadline: '- Implement UI/UX Design to Android\n- Work with Backend Engineer to Implement Fullrest API Backend to Android.',
                     timePlace:'Medan, Indonesia (Mar 2019)'
                 },
-                
-            ]
-            
+            ] 
         },
         language: {
             headline: "LANGUAGE",

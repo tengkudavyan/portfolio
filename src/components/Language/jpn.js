@@ -200,11 +200,6 @@ export const jpn = {
                     timePlace: "メダン、インドネシア (2月 2021年 ー 6月 2021)"
                 },
                 {
-                    headline: 'メダンの専門学校９',
-                    subHeadline: '- ソフトウェアエンジニア',
-                    timePlace:'メダン, インドネシア (2017年 ー 2020年)'
-                },
-                {
                     headline: 'モバイルアプリ開発のフリーランサー仕事',
                     subHeadline: '- React Nativeでモバイルアップリのフロントエンドを開発しました',
                     timePlace:'メダン, インドネシア (2019年)'
