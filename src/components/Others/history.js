@@ -4,7 +4,7 @@ import {
     HistoryHeadline, HistorySubHeadline, HistoryPlaceTime, ScrollLine, GreenDotContainer
 } from './elements';
 
-// History Sectin
+// History Section
 const History = ({ textData }) => {
 
     return (
@@ -19,7 +19,7 @@ const History = ({ textData }) => {
                     </GreenDotContainer>
                     <HistoryText>
                         <HistoryHeadline>{val.headline}</HistoryHeadline>
-                        <HistorySubHeadline>{val.subHeadline}</HistorySubHeadline>
+                        <HistorySubHeadline>{val.subHeadline.map(sub => `- ${sub}\n`)}</HistorySubHeadline>
                         <HistoryPlaceTime>{val.timePlace}</HistoryPlaceTime>
                     </HistoryText>
                     </HistoryContainer>

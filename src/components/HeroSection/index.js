@@ -7,6 +7,8 @@ import {
 import MainContainer from '../GlobalComponent/MainContainer';
 import CV from '../../Files/Tengku-Davyan-CV-English.pdf';
 import Proud from '../../Images/HeroSection/proud_feeling.svg' 
+import ReactGA from 'react-ga';
+
 // Hero Section Container
 const HeroSection = ({ textData, language }) => {
     const {introduction,name,jobIntroduction,job1,lastWord,download} = textData;
@@ -34,6 +36,7 @@ const HeroSection = ({ textData, language }) => {
                         <DownloadCvButton 
                             href={CV}
                             download="Tengku Davyan Portolio"
+                            onClick={() => {ReactGA.event({ category: 'User', action: 'Download CV' })}}
                         >{download}</DownloadCvButton>
 
                     </HalfWrap>

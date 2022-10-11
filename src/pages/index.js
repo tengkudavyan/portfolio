@@ -8,6 +8,7 @@ import Contact from '../components/Contact';
 import Projects from '../components/Projects';
 import { eng } from '../components/Language/eng';
 import { jpn } from '../components/Language/jpn';
+import ReactGA from 'react-ga';
 
 // Index page
 class Index extends Component{
@@ -30,12 +31,15 @@ class Index extends Component{
         if (getLanguage === undefined || getLanguage === 'eng') {
             this.setState({ language: eng, getLanguage: 'eng' });
             document.title = "Tengku Davyan | Portfolio";
+            ReactGA.pageview("/eng",null,document.title);
         } else if(getLanguage === 'jpn' || getLanguage === 'jp') {
             this.setState({ language: jpn, getLanguage: 'jpn' });
             document.title = "Tengku Davyan | ポルトフォリオ";
+            ReactGA.pageview("/jpn",null,document.title);
         } else {
             this.setState({ language: eng, getLanguage: 'eng' });
             document.title = "Tengku Davyan | Portfolio";
+            ReactGA.pageview("/",null,document.title);
         }
     }
 
